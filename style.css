@@ -14,6 +14,7 @@ html, body {
   color: #222;
   scroll-behavior: smooth;
 }
+
 .navbar {
   padding: .8rem;
   /* background-color: black; */
@@ -49,6 +50,7 @@ html, body {
   /* height:34vh; */
 
 }
+
 #skills {
   background-color: #385151;
 }
@@ -61,6 +63,10 @@ html, body {
   background-color: #222;
   color: #F8F8F8;
 }
+/* .card-text {
+  border: 2px solid red;
+  height: 170px;
+} */
 #photo-me {
   border-radius: 50%;
   height: 300px;
@@ -100,6 +106,9 @@ html, body {
 }
 .contact-list {
   display: inline-block;
+}
+.simbol {
+  color: #61DBFB;
 }
 #Contact a:hover {
   color: green;
@@ -231,6 +240,84 @@ footer {
 
 }
 
+
+/*--- Quote Machine ---*/
+.the-box {
+  /* text-align: center;
+  align-items: center;
+  display: flex;
+  margin: auto; */
+}
+#random-quotes {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#quote-box {
+  position: relative;
+
+  width: 500px;
+  height: 250px;
+  /* padding: 40px 50px; */
+  display: table;
+
+  margin: auto;
+}
+.quote-text {
+  text-align: justify;
+  position: relative;
+  width: 100%;
+  height: 200px;
+
+  clear: both;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: italic;
+}
+#author {
+  width: 100%;
+  /* height: auto; */
+  clear: both;
+  padding-top: 20px;
+  font-size: 15px;
+  text-align: right;
+}
+.buttons {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+/* .button {
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #333;
+  outline: none;
+  font-size: 15px;
+  padding: 8px 18px 6px 18px;
+  margin-top 30px;
+  opacity: 1;
+  cursor: pointer;
+}
+.button:hover{
+  color: green;
+  background-color: #222;
+} */
+#tweet-quote {
+  float: left;
+
+}
+
+#new-quote {
+  float:right;
+
+}
+.the-box{
+
+}
+
+
 /*---Media Queries --*/
 @media (max-width: 992px) {
   #logoImg {
@@ -290,8 +377,6 @@ footer {
     display: inline-block;
   }
 
-
-
   .dive-pad {
     padding-left: 0px;
     text-align: center;
@@ -334,6 +419,51 @@ footer {
   #Contact ul {
     padding-right: 25px;
   }
+
+  /* Quote Machine */
+  .the-box {
+    /* width: 220px;
+    height: auto; */
+
+  }
+  h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+  #quote-box {
+    width: 100%;
+    height: auto;
+    padding: 0px 0px;
+
+  }
+  .quote-text {
+    width: 100%;
+    height: 150px;
+    font-size: 15px;
+    /* text-align: center; */
+    align-items: center;
+
+    /* padding: 40px; */
+  }
+  #author {
+    width: 100%;
+    height: auto;
+  }
+  .buttons {
+    width: 100%;
+    height: auto;
+
+  }
+  #new-quote {
+    width: auto;
+    height: auto;
+
+  }
+  #tweet-quote {
+    width: auto;
+    height: auto;
+  }
+
 }
 .custom-toggler.navbar-toggler {
   border-color: #19B288;
@@ -410,6 +540,30 @@ footer {
   color: green;
   transition: all 0s ease;
 }
+
+
+/* Scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  background-color: #222;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-sizing: insert 0 0 5px #F8F8F8;
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #19B288;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #green;
+}
+
 
 
 /*---Firefox Bug Fix --*/
