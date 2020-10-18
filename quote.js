@@ -1,3 +1,6 @@
+const quoteSlide = document.getElementById("quoteSlide");
+const newestQuote = document.getElementById("new-quote");
+
 const quotes = [
   {
     quote: "You miss one hundred percent of the shots you don't take.",
@@ -542,4 +545,16 @@ function generateQuote() {
   document.getElementById("text").innerText = randomQuoteData.quote;
   document.getElementById("author").innerText = randomQuoteData.author;
   document.getElementById("tweet-quote").href = twitterLink;
+
 }
+
+// newestQuote.addEventListener("click", function() {
+//   $('#book').animate({
+//     opacity: 'hide', // animate slideUp
+//     margin: 'hide',
+//     padding: 'hide',
+//     height: 'hide' // animate fadeOut
+//   }, 'slow', 'linear', function() {
+//     $(this).remove();
+//   });
+// })
