@@ -18,7 +18,7 @@
 
 <!-- Navbar -->
 
-<nav class="navbar navbar-expand-md  sticky-top justify-content-end" id="navbar">
+<nav class="navbar navbar-expand-md sticky-top justify-content-end" id="navbar">
   <div class="container-fluid">
 
     <a class="navbar-brand" id="navbar-anch" href=""><img id="logoImg" src="img/logo.png"></a>
@@ -49,7 +49,7 @@
 </nav>
 
 <!-- Welcome to my site -->
-
+<button id="dark-theme" type="button" class="btn btn-outline-secondary btn-primary btn-lg" name="button">Light Theme?</button>
 
 <section id="welcome-section" class="text-center">
       <h1>Greetings, I am Sebastian Mocanu</h1>
@@ -76,8 +76,8 @@
 
   <div class="container-fluid padding">
     <div class="row padding">
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="card ">
           <img class="card-img-top" src="img/js calculator.jpeg"  alt="">
           <div class="card-body">
             <h4 class="card-title">JS Calculator w/ React <i class="fab fa-react simbol"></i></h4>
@@ -325,28 +325,26 @@
 <br>
 <br>
 <div class="container-fluid padding">
-  <div class="row padding">
+  <div class="row padding" >
     <div class="col-md-12">
 
-      <h3 id="random-quotes">Random Favourite Qutes</h3>
-      <div class="the-box">
-        <wraper id="quote-box">
-          <div class="quote-text">
-            <i class="fa fa-quote-left"></i>
-              <span id="text"></span>
-              <div id="author"></div>
-          </div>
+        <h3 id="random-quotes">Random Favourite Qutes</h3>
+        <div class="the-box">
+          <wraper id="quote-box">
+            <div class="quote-text">
+              <i class="fa fa-quote-left"></i>
+                <span id="text"></span>
+                <div id="author"></div>
+            </div>
 
-
-
-          <div class="buttons">
-            <a href="#" class="btn btn-outline-secondary btn-primary btn-lg" target="_blank" id="tweet-quote">
-              <span><i class="fab fa-twitter-square"></i> Tweet</span>
-            </a>
-            <button type="button" class="btn btn-outline-secondary btn-primary btn-lg" id="new-quote" name="button" onClick="generateQuote()"><span>New Quote</span></button>
-          </div>
-        </wraper>
-      </div>
+            <div class="buttons">
+              <a href="#" class="btn btn-outline-secondary btn-primary btn-lg" target="_blank" id="tweet-quote">
+                <span><i class="fab fa-twitter-square"></i> Tweet</span>
+              </a>
+              <button type="button" class="btn btn-outline-secondary btn-primary btn-lg" id="new-quote" name="button" onClick="generateQuote()"><span>New Quote</span></button>
+            </div>
+          </wraper>
+        </div>
     </div>
   </div>
 </div>
@@ -518,6 +516,7 @@
 
 </div>
 
+
 <!-- Footer -->
 
 <footer>
@@ -538,6 +537,8 @@
 <script src="quote.js"></script>
 <script src="upArrow.js"></script>
 <script src="script.js"></script>
+<script src="background.js"></script>
+<script src="darkMode.js"></script>
 
 </body>
 </html>
