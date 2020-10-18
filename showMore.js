@@ -13,16 +13,18 @@ buttonShow.addEventListener("click", function() {
     // $(row1).slideUp();
     // setTimeOut(function() {
     //   $(row2).slideUp();
-    // }, 100);
+    //
+    // }, 3000);
   }
   else {
     row1.style.display = "none";
     row2.style.display = "none";
     buttonShow.innerHTML = "Show More?";
     // $(row1).slideDown();
-
+    //
     // setTimeOut(function() {
     //   $(row2).slideDown();
-    // }, 100);
+    //
+    // }, 3000);
   }
 })

@@ -71,7 +71,15 @@ html, body {
   padding-bottom: 225px;
   font-size: 35px;
   /* height:34vh; */
+  /* position: flex; */
+  /* z-index: 10; */
+  /* background-position: 50% 50%; */
 
+}
+#particles-js {
+
+  /* z-index: -1;s */
+  /* background-position: 50% 50%; */
 }
 
 #skills {
