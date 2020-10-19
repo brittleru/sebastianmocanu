@@ -4,10 +4,11 @@ const welcome = document.getElementById("welcome-section")
 const root = document.documentElement;
 const photo = document.getElementById("photo-me");
 const logo = document.getElementById("logoImg");
-const navbar = document.getElementById("");
-const footer = document.getElementById("");
 
-// Event listeners
+
+
+
+// Event listener
 button.addEventListener("click", function() {
   // body.style.backgroundColor = "#F8F8F8";
   // welcome.style.backgroundColor = "#F8F8F8";
@@ -29,7 +30,7 @@ button.addEventListener("click", function() {
       {
         "particles": {
           "number": {
-            "value": 50,
+            "value": 30,
             "density": {
               "enable": true,
               "value_area": 600
@@ -142,11 +143,27 @@ button.addEventListener("click", function() {
           // "background_size": "cover"
         }
       }
-
     );
 
+    // Local Storage
+    // let thePhoto = "./img/me2.jpeg";
+    // let theLogo = "./img/logo2.png";
+    // let theButton = "Dark Theme?";
+    // localStorage.setItem("lightPhoto", thePhoto);
+    // localStorage.setItem("lightLogo", theLogo);
+    // localStorage.setItem("lightButton", theButton);
+    //
+    // lightPhoto = localStorage.getItem("lightPhoto");
+    // lightLogo = localStorage.getItem("lightLogo");
+    // lightButton = localStorage.getItem("lightButton");
+    // photo.src = thePhoto;
+    // logo.src = theLogo;
+    // button.innerHTML = theButton;
+
+    // localStorage.remove("siteName");
 
   }
+
   else {
     root.style.setProperty("--backgroundcol", "linear-gradient(to right, #203a43, #2c5364, #385151)");
     root.style.setProperty("--navFot", "linear-gradient(to right, #000000, #434343)");
@@ -278,6 +295,26 @@ button.addEventListener("click", function() {
         }
       }
     );
+
+
+
+    // Local Storage
+
+    // let thePhoto = "./img/me.jpeg";
+    // let theLogo = "./img/logo.png";
+    // let theButton = "Light Theme?";
+    // localStorage.setItem("darkPhoto", thePhoto);
+    // localStorage.setItem("darkLogo", theLogo);
+    // localStorage.setItem("darkButton", theButton);
+    //
+    // darkPhoto = localStorage.getItem("darkPhoto");
+    // darkLogo = localStorage.getItem("darkLogo");
+    // darkButton = localStorage.getItem("darkButton");
+    // photo.src = thePhoto;
+    // logo.src = theLogo;
+    // button.innerHTML = theButton;
+
+
 
   }
 })
