@@ -2,20 +2,20 @@ const logo = document.getElementById("logoImg");
 const button = document.getElementById("dark-theme");
 
 
-// function getSystemPref() {
-//   if (matchMedia('(prefers-color-scheme: light)').matches) {
-//     return 'light';
-//   }
-//   return 'dark';
-// }
+function getSystemPref() {
+  if (matchMedia('(prefers-color-scheme: light)').matches) {
+    return 'light';
+  }
+  return 'dark';
+}
 
-// function getTheLocalHost() {
-//   return localStorage.getItem("theme") || "system";
-// }
-//
-// function setTheLocalHost(userPreference) {
-//   localStorage.setItem("theme", userPreference);
-// }
+function getTheLocalHost() {
+  return localStorage.getItem("theme") || "system";
+}
+
+function setTheLocalHost(userPreference) {
+  localStorage.setItem("theme", userPreference);
+}
 
 
 function switchTheme() {
@@ -551,10 +551,10 @@ window.addEventListener("load", () => {
     setTheme(currentTheme);
     // console.log("Current theme exists!");
   }
-  // else {
-  //   // console.log("No theme!");
-  //   let systemPref = getSystemPref();
-  //   setTheme(systemPref);
-  // }
+  else {
+    // console.log("No theme!");
+    let systemPref = getSystemPref();
+    setTheme(systemPref);
+  }
 });
 button.addEventListener("click", switchTheme);
