@@ -554,10 +554,10 @@ window.addEventListener("load", () => {
     setTheme(currentTheme);
     // console.log("Current theme exists!");
   }
-  else {
-    // console.log("No theme!");
-    let systemPref = getSystemPref();
-    setTheme(systemPref);
-  }
+  // else {
+  //   // console.log("No theme!");
+  //   let systemPref = getSystemPref();
+  //   setTheme(systemPref);
+  // }
 });
 button.addEventListener("click", switchTheme);
