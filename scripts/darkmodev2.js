@@ -2,24 +2,21 @@ const logo = document.getElementById("logoImg");
 const button = document.getElementById("dark-theme");
 
 
-function getSystemPref() {
-  if (matchMedia('(prefers-color-scheme: light)').matches) {
-    return 'light';
-  }
-  return 'dark';
-}
+// function getSystemPref() {
+//   if (matchMedia('(prefers-color-scheme: light)').matches) {
+//     return 'light';
+//   }
+//   return 'dark';
+// }
 
-function getTheLocalHost() {
-  return localStorage.getItem("theme") || "system";
-}
+// function getTheLocalHost() {
+//   return localStorage.getItem("theme") || "system";
+// }
+//
+// function setTheLocalHost(userPreference) {
+//   localStorage.setItem("theme", userPreference);
+// }
 
-function setTheLocalHost(userPreference) {
-  localStorage.setItem("theme", userPreference);
-}
-
-function setColorMode() {
-
-}
 
 function switchTheme() {
 
