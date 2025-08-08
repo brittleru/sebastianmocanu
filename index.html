@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="language" content="en">
-  <link rel="alternate" hreflang="en" href="https://sebastianmocanu.com/">
 
   <title>Sebastian Mocanu - AI Research Scientist & PhD Candidate</title>
   <meta name="description" content="Sebastian Mocanu - AI Research Scientist and PhD Candidate at UPB, specializing in Computer Vision, Robotics. Portfolio of research projects and applications.">
@@ -14,7 +13,12 @@
   <meta name="author" content="Sebastian Mocanu">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://sebastianmocanu.com/">
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+  <link rel="alternate" hreflang="en" href="https://sebastianmocanu.com/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com">
 
   <!-- Open Graph / Social Media tags that control how the page appears when shared (e.g., linkedin or others) -->
   <meta property="og:type" content="website">
@@ -49,19 +53,8 @@
   <meta name="geo.placename" content="Bucharest">
   <meta name="geo.position" content="44.4268;26.1025">
   <meta name="ICBM" content="44.4268, 26.1025">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Share+Tech+Mono&display=swap">
-
-  <link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
-  <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com">
-  <link rel="dns-prefetch" href="//ajax.googleapis.com">
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
-  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-  <link rel="dns-prefetch" href="//unpkg.com">
-  <link rel="dns-prefetch" href="//github.io">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="./styles/style.css">
@@ -81,7 +74,6 @@
   <meta name="color-scheme" content="light dark">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" defer></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" defer></script>
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -174,75 +166,43 @@
     "seeks": {
       "@type": "Demand",
       "description": "Collaboration opportunities in AI research, Computer Vision projects, and Robotics applications"
-    }
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Sebastian Mocanu - AI Research Portfolio",
-    "url": "https://sebastianmocanu.com",
-    "description": "Research portfolio and academic work of Sebastian Mocanu, AI Research Scientist and PhD candidate in Computer Vision and Robotics",
-    "author": {
-      "@type": "Person",
-      "name": "Sebastian Mocanu"
-    }
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Sebastian Mocanu Research Projects",
-    "description": "AI and Computer Vision research projects by Sebastian Mocanu",
-    "itemListElement": [
+    },
+    "mainEntity": {
+      "@type": "WebSite",
+      "name": "Sebastian Mocanu - AI Research Portfolio",
+      "url": "https://sebastianmocanu.com",
+      "description": "Research portfolio and academic work of Sebastian Mocanu, AI Research Scientist and PhD candidate in Computer Vision and Robotics"
+    },
+    "creativeWork": [
       {
         "@type": "CreativeWork",
         "name": "Computer Vision Research Projects",
-        "description": "Advanced research in computer vision algorithms and applications",
-        "author": {
-          "@type": "Person",
-          "name": "Sebastian Mocanu"
-        }
+        "description": "Advanced research in computer vision algorithms and applications"
       },
       {
         "@type": "CreativeWork",
         "name": "Robotics Engineering Projects",
-        "description": "Innovative robotics solutions and autonomous systems development",
-        "author": {
-          "@type": "Person",
-          "name": "Sebastian Mocanu"
-        }
+        "description": "Innovative robotics solutions and autonomous systems development"
       }
-    ]
+    ],
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sebastianmocanu.com"
+      }]
+    }
   }
   </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://sebastianmocanu.com"
-    }]
-  }
-  </script>
+  
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 </head>
 
 <body>
-
-
-  <!-- Navbar -->
-
   <nav class="navbar navbar-expand-md sticky-top justify-content-end" id="navbar">
     <div class="container-fluid">
-
       <a class="navbar-brand" id="navbar-anch" href="">
         <picture>
           <source id="logoSource" srcset="./img/logo-dark-theme.webp" type="image/webp">
@@ -275,16 +235,13 @@
     </div>
   </nav>
 
-  <!-- Welcome to my site -->
-  <!-- Particle stuff -->
   <div class="">
     <button id="dark-theme" type="button" class="btn btn-outline-secondary btn-primary btn-lg" name="button">Light Theme?</button>
   </div>
+  <!-- Particle stuff -->
   <div id="particles-js"></div>
 
-  <!-- Welcome section -->
   <section id="welcome-section" class="text-center">
-
     <div class="container welcome-stuff">
       <div class="photo-welcome left" data-aos="zoom-in-right">
         <picture>
@@ -297,8 +254,6 @@
           </h2>
         </div>
         <h5 id="writing-text-passion">
-          <!-- < Deep Learning and Guitar enthusiast /> -->
-          <!-- <span id="blinking-effect-2" class="blinking-dash">_</span> -->
         </h5>
       </div>
 
@@ -316,16 +271,10 @@
 
   </section>
 
-
-
   <!-- Go up? -->
-
   <a id="button"></a>
 
-  <!-- Projects -->
-
   <section id="projects">
-
     <div class="container-fluid padding">
       <div class="row welcome text-center">
         <div class="col-12">
@@ -338,8 +287,6 @@
 
     <div class="container-fluid padding">
       <div class="row padding projects-row">
-
-
         <div class="col-lg-4 col-md-4 col-sm-12 the-card-parent">
           <div data-aos="zoom-in" class="card the-card">
             <div class="card-img-parent">
@@ -358,7 +305,6 @@
                 <img src="./img/logos/python_logo.png" alt="Python Logo" loading="lazy">
                 <img src="./img/logos/django_logo.png" alt="Django Logo" loading="lazy">
                 <img src="./img/logos/mysql_logo.svg" alt="MySQL Logo" loading="lazy">
-
               </p>
               <p class="card-text">I worked on this site from scratch, its purpose
                 is to be informative for the students at the SET program. It’s made
@@ -383,10 +329,7 @@
                 <img src="./img/logos/android_logo.png" alt="Android Logo" loading="lazy">
                 <img src="./img/logos/retrofit_logo.png" alt="Retrofit Logo" loading="lazy">
                 <img src="./img/logos/sqlite_logo.png" alt="SQLite Logo" loading="lazy">
-
-
               </p>
-
               <p class="card-text">For the final project within the Google Digital
                 Workshop for programmers - Android Fundamentals I made a portfolio
                 application with all the challenges and tasks I had during the course.</p>
@@ -421,11 +364,9 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <div class="row padding projects-row">
-
         <div class="col-lg-4 col-md-4 col-sm-12 the-card-parent">
           <div data-aos="zoom-in" class="card the-card">
             <div class="card-img-parent">
@@ -439,9 +380,7 @@
               <p class="tehnologies-used">
                 <img src="./img/logos/python_logo.png" alt="Python Logo" loading="lazy">
                 <img src="./img/logos/tkinter.png" alt="Tkinter Logo" loading="lazy">
-
               </p>
-
               <p class="card-text">Using Python and Tkinter I've made a desktop
                 application in order to compute Fourier Series coefficients more
                 easily and to also visualize the wave graph.</p>
@@ -462,7 +401,6 @@
               <h4 class="card-title">Fourier Components Module</h4>
               <p class="tehnologies-used">
                 <img src="./img/logos/python_logo.png" alt="Python Logo" loading="lazy">
-
               </p>
               <p class="card-text">I am working for a Fourier Harmonics Components
                 Module in Python. Its purpose is to add the waves from a signal to
@@ -471,7 +409,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-lg-4 col-md-4 col-sm-12 the-card-parent">
           <div data-aos="zoom-in" class="card the-card">
@@ -491,9 +428,6 @@
                 <img src="./img/logos/d3.svg" alt="D3JS Logo" loading="lazy">
                 <img src="./img/logos/graphql_logo.png" alt="GraphQL Logo" loading="lazy">
                 <img src="./img/logos/apollo_logo.png" alt="Apollo Logo" loading="lazy">
-
-
-
               </p>
               <p class="card-text">I've made a ReactJS histogram using D3 and GraphQL API
                 with Apollo comunication. It shows the number of posts from each month.</p>
@@ -502,14 +436,9 @@
             </div>
           </div>
         </div>
-
-
-
       </div>
 
-
       <div class="row padding projects-row">
-
         <div class="col-lg-4 col-md-4 col-sm-12 the-card-parent">
           <div data-aos="zoom-in" class="card the-card">
             <div class="card-img-parent">
@@ -523,8 +452,6 @@
               <p class="tehnologies-used">
                 <img src="./img/logos/java_logo1.png" alt="Java Logo" loading="lazy">
                 <img src="./img/logos/arduino_logo.png" alt="Arduino Logo" loading="lazy">
-
-
               </p>
               <p class="card-text">I've used Java in order to manipulate CSV data
                 from a sensor to order and label it in different CSVs, so I can use
@@ -548,7 +475,6 @@
                 <img src="./img/logos/python_logo.png" alt="Python Logo" loading="lazy">
                 <img src="./img/logos/arduino_logo.png" alt="Arduino Logo" loading="lazy">
                 <img src="./img/logos/tcpip_logo.png" alt="TCP/IP Logo" loading="lazy">
-
               </p>
               <p class="card-text">This is a multithreaded Python code in which
                 I use data from a Sensor to plot it, send it to Arduino to use
@@ -586,11 +512,6 @@
         </div>
 
       </div>
-
-
-
-
-
     </div>
 
     <div class="show-button">
@@ -598,13 +519,9 @@
         <button id="show-more" type="button" class="btn btn-outline-secondary btn-primary btn-lg" name="button">More Projects</button>
       </a>
     </div>
-
-
   </section>
 
-  <!-- About me -->
   <section id="Facts">
-
     <div class="container-fluid padding hrAndStuff">
       <div class="row welcome text-center">
         <div class="col-12">
@@ -615,16 +532,11 @@
     </div>
 
     <div class="container-fluid padding">
-
-      <!-- First row -->
       <div class="row padding work-full-container">
-
         <div class="col-lg-4 col-sm-12 work-container">
           <div class="the-work-stuff" data-aos="fade-up">
-
             <div class="work-content ">
               <h2 class="text-highlight-color "><i class="fas fa-briefcase i-fix"></i> Work Experience <i class="fas fa-briefcase i-fix"></i></h2>
-              <!-- <h5 class="">These are the places where I grew up professionally but also as a person.</h5> -->
               <hr>
               <h3 class="text-highlight-color ">Freelance Web Developer</h3>
               <h6 class="time-spend"><i class="far fa-calendar-alt"></i> April 2021 - Present</h6>
@@ -747,8 +659,6 @@
             <div class="work-content ">
               <h2 class="text-highlight-color "><i class="fas fa-graduation-cap i-fix"></i> Education <i class="fas fa-graduation-cap i-fix"></i></h2>
               <hr>
-              <!-- <h5 class="work-description">I am a proactive person and I like to spend my time wisely, investing
-                it in something I love or care about.</h5> -->
 
               <h3 class="text-highlight-color ">Master's in Artificial Intelligence</h3>
               <h6 class="time-spend"><i class="far fa-calendar-alt"></i> October 2021 - Present</h6>
@@ -782,7 +692,6 @@
                 masters, I chosen to also go for the module II so I can teach
                  at university or to lead and teach people at work.</h5>
 
-
               <h3 class="text-highlight-color ">The session of scientific communications</h3>
               <hr class="light">
               <h5 class="work-description">My first time there was
@@ -792,26 +701,14 @@
                 of gyroscope rotors</span>. The third time was in my fourth
                 year by presenting an <span class="text-highlight-color">LCD numbers
                   reader drone</span>.</h5>
-
-
-              <!-- <h3 class="text-highlight-color ">Highschool - Mathematics and Informatics</h3>
-              <h6 class="time-spend"><i class="far fa-calendar-alt"></i> September 2013 - June 2017</h6>
-              <hr class="light">
-              <h5 class="work-description"></h5> -->
             </div>
-
           </div>
         </div>
       </div>
     </div>
-
   </section>
 
-
-  <!-- Skills / certs -->
-
   <section id="skills">
-
     <div class="container-fluid padding">
       <div class="row welcome text-center">
         <div class="col-12">
@@ -823,10 +720,7 @@
     </div>
 
     <div class="container-fluid padding certificate-tabs-parent">
-
       <div class="body-of-tabs" data-aos="fade-up">
-
-
         <div class="certificate-tabs">
           <div class="buttons-cert-parent">
             <button id="google-button" class="tab-link" type="button" name="button"><img src="./img/google-logo.ico" alt="Google Logo"> Google Workshop</button>
@@ -993,11 +887,8 @@
       </div>
     </div>
 
-
-
     <div class="container-fluid text-center">
       <div class="row">
-
         <div class="col-md-12"><br>
           <p class="lead subtitle-text-color">You can verify those certificates by clicking on them.</p>
         </div>
@@ -1009,11 +900,7 @@
         <hr>
       </div>
     </div>
-
   </section>
-
-
-  <!-- Contact Me -->
 
   <section id="Contact" class="text-center">
     <div data-aos="zoom-in-up" data-aos="zoom-out-up">
@@ -1025,7 +912,6 @@
             <i class="fab fa-github" aria-hidden="true"></i> GitHub
           </a>
         </li>
-
         <li class="contact-list">
           <a href="https://www.linkedin.com/in/sebastian-mocanu-b76a61184/" target="_blank" class="personal-links">
             <i class="fab fa-linkedin"></i> LinkedIn
@@ -1037,9 +923,7 @@
           </a>
         </li>
       </ul>
-
     </div>
-
   </section>
 
   <div class="cv text-center">
@@ -1059,37 +943,23 @@
           <path d="M8 12c4 0 5 1.755 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12z" />
         </svg> CV
       </button>
-
-
   </div>
 
-
-  <!-- Footer -->
-
   <footer>
-
     <div class="container-fluid">
       <div class="row text-center">
         <div class="col-12"><br>
           <p><b>&copy</b> 2021 <span class="text-highlight-color"><b>Sebastian Mocanu</b></span></p>
         </div>
-        <!-- <div class="col-md-6">
-        <p></p>
-      </div> -->
       </div>
-
     </div>
   </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script type="text/javascript">
-    AOS.init();
-  </script>
+  <script type="text/javascript">AOS.init();</script>
   <script type="text/javascript" src="scripts/upArrow.js" defer></script>
   <script type="text/javascript" src="scripts/particles.js" defer></script>
   <script type="text/javascript" src="scripts/darkmode.js" defer></script>
-  <script type="text/javascript" src="scripts/showMore.js" defer></script>
   <script type="text/javascript" src="scripts/tabs.js" defer></script>
   <script type="text/javascript" src="scripts/textWriting.js" defer></script>
   <script type="text/javascript" src="scripts/whichCV.js" defer></script>

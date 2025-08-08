@@ -1,14 +1,17 @@
-var btn = $("#button");
+const btn = document.getElementById("button");
 
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass("show");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    btn.classList.add("show");
   } else {
-    btn.removeClass("show");
+    btn.classList.remove("show");
   }
 });
 
-btn.on("click", function (e) {
+btn.addEventListener("click", (e) => {
   e.preventDefault();
-  $("html, body").animate({ scrollTop: 0 }, "300");
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });

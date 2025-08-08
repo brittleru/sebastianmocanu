@@ -9,7 +9,6 @@ const freecodecampContent = document.getElementById("freecodecamp-content");
 const allTabs = document.getElementsByClassName("tab-content");
 const tabLinks = document.getElementsByClassName("tab-link");
 
-
 function goToCertificate(eventCert, certificate) {
   for (let i = 0; i < allTabs.length; i++) {
     allTabs[i].style.display = "none";
@@ -20,11 +19,8 @@ function goToCertificate(eventCert, certificate) {
 
   certificate.style.display = "block";
   eventCert.currentTarget.className += " active";
-
 }
 
-
-// ======= Event listeners ======= //
 googleBtn.addEventListener("click", () => {
   goToCertificate(event, googleContent);
 });
@@ -42,9 +38,6 @@ freecodecampBtn.addEventListener("click", () => {
 });
 
 window.addEventListener("load", (event) => {
-
-  googleContent.style.display = "block"
+  googleContent.style.display = "block";
   googleBtn.className += " active";
-
-
-})
+});

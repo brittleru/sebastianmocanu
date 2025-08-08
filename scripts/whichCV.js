@@ -4,34 +4,22 @@ const popupElements = document.getElementById("popup-ele-id");
 let check = false;
 
 function showElements() {
-
-  console.log(check);
   if (!check) {
     popupElements.style.visibility = "visible";
-    $(popupElements).fadeTo("slow", 1);
+    popupElements.style.opacity = "1";
+    popupElements.style.transition = "opacity 0.5s ease-in-out";
     check = true;
-
-
-  }
-  else {
+  } else {
     popupElements.style.visibility = "hidden";
-    $(popupElements).fadeTo("slow", 0);
-
+    popupElements.style.opacity = "0";
+    popupElements.style.transition = "opacity 0.5s ease-in-out";
     check = false;
   }
-
 }
-
-
 
 if (popupElements.style.visibility === "visible") {
   popupElements.style.visibility = "hidden";
-
   check = false;
 }
 
 cvButton.addEventListener("click", showElements);
-
-
-
-// "./cv/Mocanu Sebastian CV.pdf"
