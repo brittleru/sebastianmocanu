@@ -1,10 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-
 :root {
-  /* --backgroundcol: #385151; */
-  --backgroundcol: linear-gradient(to right, #203a43, #2c5364, #000);
-  --navFot: linear-gradient(to right, #000000, #434343);
+  --backgroundcol: linear-gradient(135deg, #1b2735 0%, #274859 50%, #0d1d23 100%);
+  --navFot: linear-gradient(-135deg, #090a0f, #1b2735);
   --whiteText: #F8F8F8;
   --hoverColor: green;
   --borders: #222;
@@ -18,10 +14,11 @@
   --uiColor: #19B288;
   --hrColor: #000;
   --writingTextTitle: #19B288;
+  --textColor: #F8F8F8;
 }
 
 [data-theme="light"] {
-  --backgroundcol: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+  --backgroundcol: linear-gradient(120deg, #a1c4fd, #c2e9fb);
   --navFot: #3a515f;
   --hoverColor: #c2f0fc;
   --borders: #3a515f;
@@ -32,6 +29,7 @@
   --uiColor: #6dd5fa;
   --hrColor: #222;
   --writingTextTitle: #2980b9;
+  --textColor: #222;
 }
 
 * {
@@ -66,6 +64,11 @@ html, body {
   background: var(--navFot);
   /* 3a515f */
 }
+
+.subtitle-text-color {
+  color: var(--textColor);
+}
+
 
 #dark-theme {
   margin-left: 10px;
@@ -246,6 +249,7 @@ html, body {
   font-family: 'Share Tech Mono', monospace;
   font-weight: bold;
   font-size: 18px;
+  color: var(--textColor);
   /* letter-spacing: 2px; */
 }
 
@@ -832,7 +836,7 @@ html, body {
 #Contact a {
   font-size: 30px;
   text-decoration: none;
-  color: #111;
+  color: var(--textColor);
   transition: all 0.1s ease-in-out;
 }
 
@@ -894,7 +898,6 @@ html, body {
   padding: 14px 16px;
   font-size: 25px;
   text-decoration: none;
-  color: #222;
 }
 
 .personal-links {
@@ -903,7 +906,7 @@ html, body {
   padding: 14px 16px;
   font-size: 25px;
   text-decoration: none;
-  /* color: #222; */
+  /* color: var(--textColor); */
 }
 
 /* ======== Stuff ======== */
@@ -1029,10 +1032,6 @@ footer {
   }
 
   .display-4 {
-    font-size: 25px;
-  }
-
-  h1 {
     font-size: 25px;
   }
 

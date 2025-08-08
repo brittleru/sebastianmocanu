@@ -1,19 +1,42 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Sebastian Mocanu - AI Research Scientist & PhD Candidate",
+    "short_name": "Sebastian Mocanu",
+    "description": "AI Research Scientist and PhD Candidate at UPB, specializing in Computer Vision, Robotics. Portfolio of research projects and applications.",
+    "lang": "en",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "theme_color": "#2d89ef",
+    "background_color": "#f8f9fa",
+    "categories": ["education", "technology", "research"],
     "icons": [
         {
-            "src": "/android-chrome-192x192.png",
+            "src": "/favicon_stuff/android-chrome-192x192.png",
             "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "/favicon_stuff/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "/favicon_stuff/favicon-32x32.png",
+            "sizes": "32x32",
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-512x512.png",
-            "sizes": "512x512",
+            "src": "/favicon_stuff/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon_stuff/apple-touch-icon.png",
+            "sizes": "180x180",
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
 }

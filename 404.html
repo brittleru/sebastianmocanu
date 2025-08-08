@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>404 - Page Not Found | Sebastian Mocanu</title>
+  <meta name="description"
+        content="Page not found. Return to Sebastian Mocanu's portfolio - AI Research Scientist and PhD Candidate specializing in Computer Vision and Robotics.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_stuff/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_stuff/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_stuff/favicon-16x16.png">
+
+  <style>
+      .error-container {
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(to right, #203a43, #2c5364, #000);
+          position: relative;
+          overflow: hidden;
+      }
+
+      .error-content {
+          text-align: center;
+          color: white;
+          z-index: 2;
+          padding: 2rem;
+          max-width: 600px;
+      }
+
+      .error-404 {
+          font-size: 8rem;
+          font-weight: 700;
+          margin: 0;
+          text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3);
+          background-size: 400% 400%;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          animation: gradientShift 3s ease-in-out infinite;
+      }
+
+      @keyframes gradientShift {
+          0%, 100% {
+              background-position: 0% 50%;
+          }
+          50% {
+              background-position: 100% 50%;
+          }
+      }
+
+      .error-title {
+          font-size: 2.5rem;
+          margin: 1rem 0;
+          font-weight: 600;
+      }
+
+      .error-description {
+          font-size: 1.2rem;
+          margin: 1.5rem 0;
+          opacity: 0.9;
+          line-height: 1.6;
+      }
+
+      .error-buttons {
+          margin-top: 2rem;
+      }
+
+      .error-btn {
+          display: inline-block;
+          padding: 12px 30px;
+          margin: 0 10px 10px 0;
+          background: rgba(255, 255, 255, 0.1);
+          border: 2px solid rgba(255, 255, 255, 0.3);
+          color: white;
+          text-decoration: none;
+          border-radius: 50px;
+          font-weight: 500;
+          transition: all 0.3s ease;
+          backdrop-filter: blur(10px);
+      }
+
+      .error-btn:hover {
+          background: rgba(255, 255, 255, 0.2);
+          border-color: rgba(255, 255, 255, 0.5);
+          color: white;
+          text-decoration: none;
+          transform: translateY(-2px);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .error-btn.primary {
+          background: rgba(25, 178, 136, 0.8);
+          border-color: #0d7a5c;
+      }
+
+      .error-btn.primary:hover {
+          background: #19B288;
+          border-color: #0d7a5c;
+      }
+
+      /* Animated background particles */
+      .particles {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+      }
+
+      .particle {
+          position: absolute;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 50%;
+          animation: float 6s ease-in-out infinite;
+      }
+
+      .particle:nth-child(1) {
+          width: 20px;
+          height: 20px;
+          left: 10%;
+          animation-delay: 0s;
+      }
+
+      .particle:nth-child(2) {
+          width: 15px;
+          height: 15px;
+          left: 20%;
+          animation-delay: 1s;
+      }
+
+      .particle:nth-child(3) {
+          width: 25px;
+          height: 25px;
+          left: 70%;
+          animation-delay: 2s;
+      }
+
+      .particle:nth-child(4) {
+          width: 18px;
+          height: 18px;
+          left: 80%;
+          animation-delay: 3s;
+      }
+
+      .particle:nth-child(5) {
+          width: 22px;
+          height: 22px;
+          left: 60%;
+          animation-delay: 4s;
+      }
+
+      @keyframes float {
+          0%, 100% {
+              transform: translateY(100vh) rotate(0deg);
+              opacity: 0;
+          }
+          10% {
+              opacity: 1;
+          }
+          90% {
+              opacity: 1;
+          }
+          100% {
+              transform: translateY(-100px) rotate(360deg);
+              opacity: 0;
+          }
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+          .error-404 {
+              font-size: 6rem;
+          }
+
+          .error-title {
+              font-size: 2rem;
+          }
+
+          .error-description {
+              font-size: 1rem;
+          }
+
+          .error-content {
+              padding: 1rem;
+          }
+      }
+
+      body.dark-theme .error-container {
+          background: linear-gradient(to right, #203a43, #2c5364, #000);
+      }
+
+      .breadcrumb-nav {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          z-index: 3;
+      }
+
+      .breadcrumb-nav a {
+          color: rgba(255, 255, 255, 0.8);
+          text-decoration: none;
+          font-weight: 500;
+      }
+
+      .breadcrumb-nav a:hover {
+          color: white;
+          text-decoration: none;
+      }
+
+      .robot-icon {
+          font-size: 4rem;
+          margin-bottom: 1rem;
+          opacity: 0.7;
+          animation: robotBounce 2s ease-in-out infinite;
+      }
+
+      @keyframes robotBounce {
+          0%, 100% {
+              transform: translateY(0px);
+          }
+          50% {
+              transform: translateY(-10px);
+          }
+      }
+  </style>
+</head>
+
+<body>
+<div class="breadcrumb-nav">
+  <a href="/"><i class="fas fa-home"></i> Back to Home</a>
+</div>
+
+<div class="error-container">
+  <div class="particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <div class="error-content">
+    <div class="robot-icon">
+      <i class="fas fa-robot"></i>
+    </div>
+
+    <h1 class="error-404">404</h1>
+
+    <h2 class="error-title">Page Not Found</h2>
+
+    <p class="error-description">
+      Oops! It looks like this page has wandered off into the digital void.
+      Even my AI algorithms can't locate it! Don't worry though - let's get you back on track.
+    </p>
+
+    <div class="error-buttons">
+      <a href="/" class="error-btn primary">
+        <i class="fas fa-home"></i> Go Home
+      </a>
+      <a href="/#projects" class="error-btn">
+        <i class="fas fa-code"></i> View Projects
+      </a>
+      <a href="/#Contact" class="error-btn">
+        <i class="fas fa-envelope"></i> Contact Me
+      </a>
+    </div>
+
+    <div style="margin-top: 3rem; opacity: 0.8;">
+      <p style="margin-bottom: 1rem; font-weight: 500;">Or explore these popular sections:</p>
+      <div style="font-size: 0.9rem;">
+        <a href="/#Facts" style="color: rgba(255,255,255,0.8); margin-right: 20px; text-decoration: none;">
+          About Me
+        </a>
+        <a href="/#skills" style="color: rgba(255,255,255,0.8); margin-right: 20px; text-decoration: none;">
+          Skills & Certificates
+        </a>
+        <a href="https://github.com/brittleru" target="_blank"
+           style="color: rgba(255,255,255,0.8); text-decoration: none;">
+          GitHub Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        const referrer = document.referrer;
+        if (referrer && referrer.includes('sebastianmocanu.com')) {
+            $('.error-description').html(`
+          Hmm, it seems this page has been moved or doesn't exist anymore. 
+          This might be a broken internal link - I'll need to debug this!
+        `);
+        }
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'h' || e.key === 'H') {
+            window.location.href = '/';
+        }
+        if (e.key === 'Escape') {
+            history.back();
+        }
+    });
+</script>
+</body>
+
+</html>
