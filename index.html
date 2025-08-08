@@ -79,7 +79,8 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["Person", "Researcher"],
+    "@type": "Person",
+    "additionalType": "https://schema.org/Researcher",
     "name": "Sebastian Mocanu",
     "givenName": "Sebastian",
     "familyName": "Mocanu",
@@ -167,36 +168,42 @@
       "@type": "Demand",
       "description": "Collaboration opportunities in AI research, Computer Vision projects, and Robotics applications"
     },
-    "mainEntity": {
-      "@type": "WebSite",
-      "name": "Sebastian Mocanu - AI Research Portfolio",
-      "url": "https://sebastianmocanu.com",
-      "description": "Research portfolio and academic work of Sebastian Mocanu, AI Research Scientist and PhD candidate in Computer Vision and Robotics"
-    },
-    "creativeWork": [
-      {
-        "@type": "CreativeWork",
-        "name": "Computer Vision Research Projects",
-        "description": "Advanced research in computer vision algorithms and applications"
-      },
-      {
-        "@type": "CreativeWork",
-        "name": "Robotics Engineering Projects",
-        "description": "Innovative robotics solutions and autonomous systems development"
-      }
-    ],
-    "breadcrumb": {
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://sebastianmocanu.com"
-      }]
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://sebastianmocanu.com"
     }
   }
   </script>
   
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sebastianmocanu.com"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Sebastian Mocanu - AI Research Portfolio",
+    "url": "https://sebastianmocanu.com",
+    "description": "Research portfolio and academic work of Sebastian Mocanu, AI Research Scientist and PhD candidate in Computer Vision and Robotics",
+    "author": {
+      "@type": "Person",
+      "name": "Sebastian Mocanu"
+    }
+  }
+  </script>
+
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 </head>
 
