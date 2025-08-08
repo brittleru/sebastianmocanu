@@ -19,6 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
   <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com">
+  <link rel="dns-prefetch" href="https://unpkg.com">
 
   <!-- Open Graph / Social Media tags that control how the page appears when shared (e.g., linkedin or others) -->
   <meta property="og:type" content="website">
@@ -56,6 +57,7 @@
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Share+Tech+Mono&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
@@ -73,8 +75,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="color-scheme" content="light dark">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" defer></script>
-
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" defer></script> -->
+  <script src="https://unpkg.com/@popperjs/core@2" defer></script>
+  
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
@@ -213,10 +216,10 @@
       <a class="navbar-brand" id="navbar-anch" href="">
         <picture>
           <source id="logoSource" srcset="./img/logo-dark-theme.webp" type="image/webp">
-          <img id="logoImg" src="./img/logo-dark-theme.png" alt="Sebastian Mocanu Logo with animated character">
+          <img id="logoImg" src="./img/logo-dark-theme.png" alt="Sebastian Mocanu Logo with animated character" fetchpriority="high">
         </picture>
       </a>
-      <button class="navbar-toggler ml-auto custom-toggler" id="nav-button" type="button" data-toggle="collapse" data-target="#navbarResponsive" name="button">
+      <button class="navbar-toggler ml-auto custom-toggler" id="nav-button" type="button" data-toggle="collapse" data-target="#navbarResponsive" name="button" aria-label="Toggle navigation menu">
         <span class="navbar-toggler-icon" id="nav-span"></span>
       </button>
 
@@ -253,7 +256,7 @@
       <div class="photo-welcome left" data-aos="zoom-in-right">
         <picture>
           <source srcset="./img/me2.webp" type="image/webp">
-          <img id="photo-me" src="./img/me2.jpeg" alt="Sebastian Mocanu Profile Picture - AI Research Scientist and PhD Candidate"  width="400" height="400">
+          <img id="photo-me" src="./img/me2.jpeg" alt="Sebastian Mocanu Profile Picture - AI Research Scientist and PhD Candidate"  width="400" height="400" fetchpriority="high">
         </picture>
         <div class="">
           <h2 id="writing-text" class="text-highlight-color">
@@ -311,7 +314,7 @@
                 <img src="./img/logos/bootstrap_logo.png" alt="Bootstrap Logo" loading="lazy">
                 <img src="./img/logos/python_logo.png" alt="Python Logo" loading="lazy">
                 <img src="./img/logos/django_logo.png" alt="Django Logo" loading="lazy">
-                <img src="./img/logos/mysql_logo.svg" alt="MySQL Logo" loading="lazy">
+                <img src="./img/logos/sql1.png" alt="MySQL Logo" loading="lazy">
               </p>
               <p class="card-text">I worked on this site from scratch, its purpose
                 is to be informative for the students at the SET program. It’s made
