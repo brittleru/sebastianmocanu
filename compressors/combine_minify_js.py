@@ -4,7 +4,7 @@ import os
 import subprocess
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 SCRIPTS_DIR = BASE_DIR / "scripts"
 CLOSURE_COMPILER_PATH = BASE_DIR / "compressors" / "closure-compiler-v20250706.jar"
 COMBINED_JS_PATH = SCRIPTS_DIR / "app.js"
