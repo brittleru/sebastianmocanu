@@ -18,7 +18,7 @@ research work, and professional journey.
 - **Animations:** [AOS](https://github.com/michalsnik/aos) (Animate On Scroll),
   [Particle.js](https://github.com/VincentGarreau/particles.js), Custom CSS animations
 - **Icons:** Font Awesome 5
-- **Performance:** WebP images, lazy loading, CDN resources
+- **Performance:** WebP images, lazy loading, CDN resources, Google Closure Compiler (requires Java JRE 21+ and Python)
 
 ### License
 

@@ -21,19 +21,19 @@ function goToCertificate(eventCert, certificate) {
   eventCert.currentTarget.className += " active";
 }
 
-googleBtn.addEventListener("click", () => {
+googleBtn.addEventListener("click", (event) => {
   goToCertificate(event, googleContent);
 });
 
-udemyBtn.addEventListener("click", () => {
+udemyBtn.addEventListener("click", (event) => {
   goToCertificate(event, udemyContent);
 });
 
-codecademyBtn.addEventListener("click", () => {
+codecademyBtn.addEventListener("click", (event) => {
   goToCertificate(event, codecademyContent);
 });
 
-freecodecampBtn.addEventListener("click", () => {
+freecodecampBtn.addEventListener("click", (event) => {
   goToCertificate(event, freecodecampContent);
 });
 
