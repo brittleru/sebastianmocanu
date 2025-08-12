@@ -32,6 +32,12 @@
   --textColor: #222;
 }
 
+html:not(.aos-animate) [data-aos] {
+  opacity: 1;
+  transform: none;
+}
+
+
 * {
   /* transition: all 0.1s ease-in-out; */
   margin: 0;
