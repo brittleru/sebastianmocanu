@@ -29,9 +29,11 @@ def combine_css_files(css_files: list[Path], output_file: str | Path = OUTPUT_FI
             with open(css_file, 'r', encoding='utf-8') as f:
                 content = f.read()
             
-            if 'fontawesome' in str(css_file):
+            if "fontawesome" in str(css_file):
                 print("Updating FontAwesome webfonts paths...")
-                content = content.replace('../webfonts', '../fontawesome-free-5.15.4-web/webfonts')
+                content = content.replace("../webfonts", "../fontawesome-free-5.15.4-web/webfonts")
+                content = content.replace("@font-face{", "@font-face{font-display:swap;")
+                content = content.replace("@font-face {", "@font-face {font-display:swap;")
             
             combined_content.append(f"/* === {css_file.name} === */")
             combined_content.append(content)
