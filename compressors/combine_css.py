@@ -4,13 +4,14 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 STYLES_DIR = BASE_DIR / "styles"
+VENDOR_ASSETS_DIR = BASE_DIR / "assets" / "vendor"
 # Order or the CSS file paths matter for the final output 
 CSS_FILE_PATHS = [
     STYLES_DIR / "bootstrap_v4_0_0.min.css",
     STYLES_DIR / "fonts.css",
     STYLES_DIR / "style.min.css",
-    BASE_DIR / "fontawesome-free-5.15.4-web" / "css" / "all.min.css",
-    BASE_DIR / "aos" / "styles" / "aos_v3_0_0.css"
+    VENDOR_ASSETS_DIR / "fontawesome-free-5.15.4-web" / "css" / "all.min.css",
+    VENDOR_ASSETS_DIR / "aos" / "styles" / "aos_v3_0_0.css"
 ]
 OUTPUT_FILE_PATH = STYLES_DIR / "combined.min.css"
 
@@ -32,7 +33,7 @@ def combine_css_files(css_files: list[Path], output_file: str | Path = OUTPUT_FI
             
             if "fontawesome" in str(css_file):
                 print("Updating FontAwesome webfonts paths...")
-                content = content.replace("../webfonts", "../fontawesome-free-5.15.4-web/webfonts")
+                content = content.replace("../webfonts", "../assets/vendor/fontawesome-free-5.15.4-web/webfonts")
                 content = content.replace("@font-face{", "@font-face{font-display:swap;")
                 content = content.replace("@font-face {", "@font-face {font-display:swap;")
             
