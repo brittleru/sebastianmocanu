@@ -982,6 +982,54 @@ body {
   background-color: var(--backgroundcol);
 }
 
+.personal-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.personal-text {
+  font-size: 1.1rem;
+  color: var(--cardText);
+  background-color: var(--cardBack); 
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid var(--borders);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  line-height: 1.6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.personal-text:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.maple-container {
+  padding: 1rem;
+  position: relative;
+}
+
+.maple-img {
+  width: 100%;
+  max-width: 350px; 
+  height: auto;
+  border-radius: 20px;
+  border: 3px solid var(--borders); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.maple-img:hover {
+  transform: scale(1.02) rotate(2deg); 
+}
+
+.maple-caption {
+  font-family: 'Share Tech Mono', monospace; 
+  color: var(--textColor);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
 .i-fix {
   color: var(--whiteText);
 }
