@@ -36,11 +36,11 @@ particlesJS("particles-js",{particles:{number:{value:30,density:{enable:!0,value
 
 function updateLogo(theme) {
   if (theme === "light") {
-    logo.src = "./img/logo-light-theme.png";
-    logoSource.srcset = "./img/logo-light-theme.webp";
+    logo.src = "/assets/logo-light-theme.png";
+    logoSource.srcset = "/assets/logo-light-theme.webp";
   } else if (theme === "dark") {
-    logo.src = "./img/logo-dark-theme.png";
-    logoSource.srcset = "./img/logo-dark-theme.webp";
+    logo.src = "/assets/logo-dark-theme.png";
+    logoSource.srcset = "/assets/logo-dark-theme.webp";
   }
 }
 

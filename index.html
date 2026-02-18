@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -36,11 +36,11 @@
     }
   </style>
 
-  <link rel="preload" href="/fonts/poppins-v24-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/poppins-v24-latin-500.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/poppins-v24-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/share-tech-mono-v16-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/img/Sebastian-Mocanu-Profile-Picture.webp" as="image" type="image/webp">
+  <link rel="preload" href="/assets/fonts/poppins-v24-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-v24-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-v24-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/share-tech-mono-v16-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/Sebastian-Mocanu-Profile-Picture.webp" as="image" type="image/webp">
 
   <!-- Open Graph / Social Media tags that control how the page appears when shared (e.g., linkedin or others) -->
   <meta property="og:type" content="website">
@@ -48,8 +48,8 @@
   <meta property="og:title" content="Sebastian Mocanu - AI Research Scientist & PhD Candidate">
   <meta property="og:description" content="Sebastian Mocanu - AI Research Scientist and PhD Candidate at UPB, specializing in Computer Vision, Robotics. Portfolio of research projects and applications.">
   <meta property="og:url" content="https://sebastianmocanu.com/">
-  <meta property="og:image" content="https://sebastianmocanu.com/img/sebastian-mocanu-social.png">
-  <meta property="og:image:secure_url" content="https://sebastianmocanu.com/img/sebastian-mocanu-social.png">
+  <meta property="og:image" content="https://sebastianmocanu.com/assets/sebastian-mocanu-social.png">
+  <meta property="og:image:secure_url" content="https://sebastianmocanu.com/assets/sebastian-mocanu-social.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:type" content="image/png">
@@ -59,7 +59,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Sebastian Mocanu - AI Research Scientist & PhD Candidate">
   <meta name="twitter:description" content="AI Research Scientist specializing in Computer Vision and Robotics. PhD Candidate at University POLITEHNICA of Bucharest.">
-  <meta name="twitter:image" content="https://sebastianmocanu.com/img/sebastian-mocanu-social.png">
+  <meta name="twitter:image" content="https://sebastianmocanu.com/assets/sebastian-mocanu-social.png">
   <meta name="twitter:image:alt" content="Sebastian Mocanu Profile Picture - AI Research Scientist and PhD Candidate">
 
   <meta name="citation_author" content="Sebastian Mocanu">
@@ -81,11 +81,11 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/x-icon" sizes="any" href="/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_stuff/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_stuff/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_stuff/favicon-16x16.png">
-  <link rel="manifest" href="/favicon_stuff/site.webmanifest">
-  <link rel="mask-icon" href="/favicon_stuff/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_stuff/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_stuff/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_stuff/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon_stuff/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicon_stuff/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-config" content="/favicon_stuff/browserconfig.xml">
   <meta name="msapplication-TileColor" content="#2d89ef">
   <meta name="theme-color" content="#ffffff">
@@ -108,7 +108,7 @@
     "jobTitle": "AI Research Scientist & PhD Candidate",
     "description": "AI Research Scientist and PhD candidate specializing in Computer Vision, Robotics at University POLITEHNICA Bucharest",
     "url": "https://sebastianmocanu.com",
-    "image": "https://sebastianmocanu.com/img/sebastian-mocanu-social.png",
+    "image": "https://sebastianmocanu.com/assets/sebastian-mocanu-social.png",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Bucharest",
@@ -246,8 +246,8 @@
     <div class="container-fluid">
       <a class="navbar-brand" id="navbar-anch" href="/">
         <picture>
-          <source id="logoSource" srcset="/img/logo-dark-theme.webp" type="image/webp">
-          <img id="logoImg" src="/img/logo-dark-theme.png" alt="Sebastian Mocanu Logo with animated character" fetchpriority="high">
+          <source id="logoSource" srcset="/assets/logo-dark-theme.webp" type="image/webp">
+          <img id="logoImg" src="/assets/logo-dark-theme.png" alt="Sebastian Mocanu Logo with animated character" fetchpriority="high">
         </picture>
       </a>
       <button class="navbar-toggler ml-auto custom-toggler" id="nav-button" type="button" name="button" aria-label="Toggle navigation menu">
@@ -289,8 +289,8 @@
     <div class="container welcome-stuff">
       <div class="photo-welcome left" data-aos="zoom-in-right">
         <picture>
-          <source srcset="/img/Sebastian-Mocanu-Profile-Picture.webp" type="image/webp">
-          <img id="photo-me" src="/img/Sebastian-Mocanu-Profile-Picture.jpeg" alt="Sebastian Mocanu Profile Picture - AI Research Scientist and PhD Candidate"  width="400" height="400" fetchpriority="high">
+          <source srcset="/assets/Sebastian-Mocanu-Profile-Picture.webp" type="image/webp">
+          <img id="photo-me" src="/assets/Sebastian-Mocanu-Profile-Picture.jpeg" alt="Sebastian Mocanu Profile Picture - AI Research Scientist and PhD Candidate" width="400" height="400" fetchpriority="high">
         </picture>
         <div class="">
           <h2 id="writing-text" class="text-highlight-color">
@@ -325,10 +325,10 @@
             <i class="fab fa-linkedin"></i> 
           </a>
           <a href="https://scholar.google.com/citations?user=osyBED4AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
-            <img src="/img/logos/Google_Scholar_logo.svg" alt="Google Scholar Logo">
+            <img src="/assets/logos/Google_Scholar_logo.svg" alt="Google Scholar Logo">
           </a>
           <a href="https://orcid.org/0009-0007-0313-4724" target="_blank" rel="noopener" aria-label="ORCID">
-            <img src="/img/logos/orcid-logo.svg" alt="ORCID Logo">
+            <img src="/assets/logos/orcid-logo.svg" alt="ORCID Logo">
           </a>
         </div>
       </div>
@@ -370,9 +370,9 @@
 
         <div class="pub-body">
           <div class="pub-visual pub-visual-video" >
-            <video autoplay muted loop playsinline controls preload="metadata" poster="/img/publications/Drone-Car-ICCV-poster.webp" aria-label="Demo video showcasing NSER-IBVS">
-              <source src="/img/publications/Drone-Car-ICCV-Preview-compressed.mp4" type="video/mp4">
-              <img src="/img/publications/Drone-Car-ICCV-poster.webp" alt="Visual servoing quadrotor demo">
+            <video autoplay muted loop playsinline controls preload="metadata" poster="/assets/publications/Drone-Car-ICCV-poster.webp" aria-label="Demo video showcasing NSER-IBVS">
+              <source src="/assets/publications/Drone-Car-ICCV-Preview-compressed.mp4" type="video/mp4">
+              <img src="/assets/publications/Drone-Car-ICCV-poster.webp" alt="Visual servoing quadrotor demo">
             </video>
           </div>
 
@@ -400,7 +400,7 @@
                 <i class="fab fa-github"></i> mask-splitter
               </a>
               <a class="pub-link pub-link-hf" href="https://huggingface.co/collections/brittleru/nser-ibvs-suite" target="_blank" rel="noopener">
-                <img src="/img/logos/hugging-face.svg" alt="Hugging Face Logo" class="hf-icon">
+                <img src="/assets/logos/hugging-face.svg" alt="Hugging Face Logo" class="hf-icon">
                 Collection
               </a>
             </div>
@@ -428,9 +428,9 @@
 
         <div class="pub-body">
           <div class="pub-visual pub-visual-video" >
-            <video autoplay muted loop playsinline controls preload="metadata" poster="/img/publications/Drone-Continual-Learning-ERF-poster.webp">
-              <source src="/img/publications/Drone-Continual-Learning-ERF-Preview-compressed.mp4" type="video/mp4">
-              <img src="/img/publications/Drone-Continual-Learning-ERF-poster.webp" alt="Indoor drone continual object perception">
+            <video autoplay muted loop playsinline controls preload="metadata" poster="/assets/publications/Drone-Continual-Learning-ERF-poster.webp">
+              <source src="/assets/publications/Drone-Continual-Learning-ERF-Preview-compressed.mp4" type="video/mp4">
+              <img src="/assets/publications/Drone-Continual-Learning-ERF-poster.webp" alt="Indoor drone continual object perception">
             </video>
           </div>
 
@@ -452,7 +452,7 @@
                 <i class="fas fa-globe"></i> Website
               </a>
               <a class="pub-link pub-link-hf" href="https://huggingface.co/datasets/sebnae/UAV-IndoorCL" target="_blank" rel="noopener">
-                <img src="/img/logos/hugging-face.svg" alt="Hugging Face Logo" class="hf-icon">
+                <img src="/assets/logos/hugging-face.svg" alt="Hugging Face Logo" class="hf-icon">
                 Dataset
               </a>
             </div>
@@ -479,9 +479,9 @@
 
         <div class="pub-body">
           <div class="pub-visual pub-visual-video" >
-            <video autoplay muted loop playsinline controls preload="metadata" poster="/img/publications/Autonom-Drone-Complex-poster.webp">
-              <source src="/img/publications/Autonom-Drone-Complex-Compressed.mp4" type="video/mp4">
-              <img src="/img/publications/Autonom-Drone-Complex-poster.webp" alt="UAV semantic segmentation and depth estimation Demo">
+            <video autoplay muted loop playsinline controls preload="metadata" poster="/assets/publications/Autonom-Drone-Complex-poster.webp">
+              <source src="/assets/publications/Autonom-Drone-Complex-Compressed.mp4" type="video/mp4">
+              <img src="/assets/publications/Autonom-Drone-Complex-poster.webp" alt="UAV semantic segmentation and depth estimation Demo">
             </video>
           </div>
 
@@ -530,20 +530,20 @@
           <div data-aos="zoom-in" class="card the-card">
             <div class="card-img-parent">
               <picture>
-                <source srcset="/img/projects/termo-site.webp" type="image/webp">
-                <img class="card-img-top" src="/img/projects/termo-site.png" alt="Departamentul de Termotehnică, Motoare, Echipamente Termice şi Frigorifice-Inginerie Mecanică şi Mecatronică - Universitatea POLITEHNICA Bucuresti." loading="lazy">
+                <source srcset="/assets/projects/termo-site.webp" type="image/webp">
+                <img class="card-img-top" src="/assets/projects/termo-site.png" alt="Departamentul de Termotehnică, Motoare, Echipamente Termice şi Frigorifice-Inginerie Mecanică şi Mecatronică - Universitatea POLITEHNICA Bucuresti." loading="lazy">
               </picture>
             </div>
             <div class="card-body">
               <h4 class="card-title">TMETF Department Website UPB</h4>
               <p class="tehnologies-used">
-                <img src="/img/logos/html_logo.png" alt="HTML Logo" loading="lazy">
-                <img src="/img/logos/css_logo.png" alt="CSS Logo" loading="lazy">
-                <img src="/img/logos/javascript_logo.png" alt="JavaScript Logo" loading="lazy">
-                <img src="/img/logos/bootstrap_logo.png" alt="Bootstrap Logo" loading="lazy">
-                <img src="/img/logos/python_logo.png" alt="Python Logo" loading="lazy">
-                <img src="/img/logos/django_logo.png" alt="Django Logo" loading="lazy">
-                <img src="/img/logos/sql1.png" alt="MySQL Logo" loading="lazy">
+                <img src="/assets/logos/html_logo.png" alt="HTML Logo" loading="lazy">
+                <img src="/assets/logos/css_logo.png" alt="CSS Logo" loading="lazy">
+                <img src="/assets/logos/javascript_logo.png" alt="JavaScript Logo" loading="lazy">
+                <img src="/assets/logos/bootstrap_logo.png" alt="Bootstrap Logo" loading="lazy">
+                <img src="/assets/logos/python_logo.png" alt="Python Logo" loading="lazy">
+                <img src="/assets/logos/django_logo.png" alt="Django Logo" loading="lazy">
+                <img src="/assets/logos/sql1.png" alt="MySQL Logo" loading="lazy">
               </p>
               <p class="card-text">I worked on this site from scratch, its purpose
                 is to be informative for the students at the SET program. It's made
@@ -557,17 +557,17 @@
           <div data-aos="zoom-in" class="card the-card">
             <div class="card-img-parent">
               <picture>
-                <source srcset="/img/projects/android-project.webp" type="image/webp">
-                <img class="card-img-top" src="/img/projects/android-project.jpeg" alt="Final Project for Android Fundamentals" loading="lazy">
+                <source srcset="/assets/projects/android-project.webp" type="image/webp">
+                <img class="card-img-top" src="/assets/projects/android-project.jpeg" alt="Final Project for Android Fundamentals" loading="lazy">
               </picture>
             </div>
             <div class="card-body">
               <h4 class="card-title">Android Portfolio</h4>
               <p class="tehnologies-used">
-                <img src="/img/logos/java_logo1.png" alt="Java Logo" loading="lazy">
-                <img src="/img/logos/android_logo.png" alt="Android Logo" loading="lazy">
-                <img src="/img/logos/retrofit_logo.png" alt="Retrofit Logo" loading="lazy">
-                <img src="/img/logos/sqlite_logo.png" alt="SQLite Logo" loading="lazy">
+                <img src="/assets/logos/java_logo1.png" alt="Java Logo" loading="lazy">
+                <img src="/assets/logos/android_logo.png" alt="Android Logo" loading="lazy">
+                <img src="/assets/logos/retrofit_logo.png" alt="Retrofit Logo" loading="lazy">
+                <img src="/assets/logos/sqlite_logo.png" alt="SQLite Logo" loading="lazy">
               </p>
               <p class="card-text">For the final project within the Google Digital
                 Workshop for programmers - Android Fundamentals I made a portfolio
@@ -582,17 +582,17 @@
           <div data-aos="zoom-in" class="card the-card">
             <div class="card-img-parent">
               <picture>
-                <source srcset="/img/projects/drone-site.webp" type="image/webp">
-                <img class="card-img-top" src="/img/projects/drone-site.png" alt="Calculations and recommendations regarding a flying mobile robot" loading="lazy">
+                <source srcset="/assets/projects/drone-site.webp" type="image/webp">
+                <img class="card-img-top" src="/assets/projects/drone-site.png" alt="Calculations and recommendations regarding a flying mobile robot" loading="lazy">
               </picture>
             </div>
             <div class="card-body">
               <h4 class="card-title">Drone Calculus</h4>
               <p class="tehnologies-used">
-                <img src="/img/logos/html_logo.png" alt="HTML Logo" loading="lazy">
-                <img src="/img/logos/css_logo.png" alt="CSS Logo" loading="lazy">
-                <img src="/img/logos/javascript_logo.png" alt="JavaScript Logo" loading="lazy">
-                <img src="/img/logos/bootstrap_logo.png" alt="Bootstrap Logo" loading="lazy">
+                <img src="/assets/logos/html_logo.png" alt="HTML Logo" loading="lazy">
+                <img src="/assets/logos/css_logo.png" alt="CSS Logo" loading="lazy">
+                <img src="/assets/logos/javascript_logo.png" alt="JavaScript Logo" loading="lazy">
+                <img src="/assets/logos/bootstrap_logo.png" alt="Bootstrap Logo" loading="lazy">
               </p>
               <p class="card-text">For my bachelor's diploma project, I synthesized
                 a calculus of 20 pages in a web application in which if some initial
@@ -610,15 +610,15 @@
           <div data-aos="zoom-in" class="card the-card">
             <div class="card-img-parent">
               <picture>
-                <source srcset="/img/projects/aplicatie-fourier.webp" type="image/webp">
-                <img class="card-img-top" src="/img/projects/aplicatie-fourier.png" alt="Desktop App about Forier series" loading="lazy">
+                <source srcset="/assets/projects/aplicatie-fourier.webp" type="image/webp">
+                <img class="card-img-top" src="/assets/projects/aplicatie-fourier.png" alt="Desktop App about Forier series" loading="lazy">
               </picture>
             </div>
             <div class="card-body">
               <h4 class="card-title">Fourier Series Application</h4>
               <p class="tehnologies-used">
-                <img src="/img/logos/python_logo.png" alt="Python Logo" loading="lazy">
-                <img src="/img/logos/tkinter.png" alt="Tkinter Logo" loading="lazy">
+                <img src="/assets/logos/python_logo.png" alt="Python Logo" loading="lazy">
+                <img src="/assets/logos/tkinter.png" alt="Tkinter Logo" loading="lazy">
               </p>
               <p class="card-text">Using Python and Tkinter I've made a desktop
                 application in order to compute Fourier Series coefficients more
@@ -632,14 +632,14 @@
           <div data-aos="zoom-in" class="card the-card">
             <div class="card-img-parent">
               <picture>
-                <source srcset="/img/projects/fourier.webp" type="image/webp">
-                <img class="card-img-top" src="/img/projects/fourier.png" alt="A Python Fourier module for harmonic components" loading="lazy">
+                <source srcset="/assets/projects/fourier.webp" type="image/webp">
+                <img class="card-img-top" src="/assets/projects/fourier.png" alt="A Python Fourier module for harmonic components" loading="lazy">
               </picture>
             </div>
             <div class="card-body">
               <h4 class="card-title">Fourier Components Module</h4>
               <p class="tehnologies-used">
-                <img src="/img/logos/python_logo.png" alt="Python Logo" loading="lazy">
+                <img src="/assets/logos/python_logo.png" alt="Python Logo" loading="lazy">
               </p>
               <p class="card-text">I am working for a Fourier Harmonics Components
                 Module in Python. Its purpose is to add the waves from a signal to
@@ -653,20 +653,20 @@
           <div data-aos="zoom-in" class="card the-card">
             <div class="card-img-parent">
               <picture>
-                <source srcset="/img/projects/code-test.webp" type="image/webp">
-                <img class="card-img-top" src="/img/projects/code-test.png" alt="Histogram app with React, D3, GraphQL and Apollo" loading="lazy">
+                <source srcset="/assets/projects/code-test.webp" type="image/webp">
+                <img class="card-img-top" src="/assets/projects/code-test.png" alt="Histogram app with React, D3, GraphQL and Apollo" loading="lazy">
               </picture>
             </div>
             <div class="card-body">
               <h4 class="card-title">Total Posts 2019</h4>
               <p class="tehnologies-used">
-                <img src="/img/logos/html_logo.png" alt="HTML Logo" loading="lazy">
-                <img src="/img/logos/css_logo.png" alt="CSS Logo" loading="lazy">
-                <img src="/img/logos/javascript_logo.png" alt="JavaScript Logo" loading="lazy">
-                <img src="/img/logos/react_logo.png" alt="ReactJS Logo" loading="lazy">
-                <img src="/img/logos/d3.svg" alt="D3JS Logo" loading="lazy">
-                <img src="/img/logos/graphql_logo.png" alt="GraphQL Logo" loading="lazy">
-                <img src="/img/logos/apollo_logo.png" alt="Apollo Logo" loading="lazy">
+                <img src="/assets/logos/html_logo.png" alt="HTML Logo" loading="lazy">
+                <img src="/assets/logos/css_logo.png" alt="CSS Logo" loading="lazy">
+                <img src="/assets/logos/javascript_logo.png" alt="JavaScript Logo" loading="lazy">
+                <img src="/assets/logos/react_logo.png" alt="ReactJS Logo" loading="lazy">
+                <img src="/assets/logos/d3.svg" alt="D3JS Logo" loading="lazy">
+                <img src="/assets/logos/graphql_logo.png" alt="GraphQL Logo" loading="lazy">
+                <img src="/assets/logos/apollo_logo.png" alt="Apollo Logo" loading="lazy">
               </p>
               <p class="card-text">I've made a ReactJS histogram using D3 and GraphQL API
                 with Apollo comunication. It shows the number of posts from each month.</p>
@@ -682,15 +682,15 @@
           <div data-aos="zoom-in" class="card the-card">
             <div class="card-img-parent">
               <picture>
-                <source srcset="/img/projects/java-sensor.webp" type="image/webp">
-                <img class="card-img-top" src="/img/projects/java-sensor.png" alt="A Java app who processes the data from a sensor." loading="lazy">
+                <source srcset="/assets/projects/java-sensor.webp" type="image/webp">
+                <img class="card-img-top" src="/assets/projects/java-sensor.png" alt="A Java app who processes the data from a sensor." loading="lazy">
               </picture>
             </div>
             <div class="card-body">
               <h4 class="card-title">Processing Sensor Data CSV</h4>
               <p class="tehnologies-used">
-                <img src="/img/logos/java_logo1.png" alt="Java Logo" loading="lazy">
-                <img src="/img/logos/arduino_logo.png" alt="Arduino Logo" loading="lazy">
+                <img src="/assets/logos/java_logo1.png" alt="Java Logo" loading="lazy">
+                <img src="/assets/logos/arduino_logo.png" alt="Arduino Logo" loading="lazy">
               </p>
               <p class="card-text">I've used Java in order to manipulate CSV data
                 from a sensor to order and label it in different CSVs, so I can use
@@ -704,16 +704,16 @@
           <div data-aos="zoom-in" class="card the-card">
             <div class="card-img-parent">
               <picture>
-                <source srcset="/img/projects/sensor-plot.webp" type="image/webp">
-                <img class="card-img-top" src="/img/projects/sensor-plot.jpg" alt="An app in python to connect to Arduino and plot data with TCP/IP protocol." loading="lazy">
+                <source srcset="/assets/projects/sensor-plot.webp" type="image/webp">
+                <img class="card-img-top" src="/assets/projects/sensor-plot.jpg" alt="An app in python to connect to Arduino and plot data with TCP/IP protocol." loading="lazy">
               </picture>
             </div>
             <div class="card-body">
               <h4 class="card-title">Multithreaded Sensor Data</h4>
               <p class="tehnologies-used">
-                <img src="/img/logos/python_logo.png" alt="Python Logo" loading="lazy">
-                <img src="/img/logos/arduino_logo.png" alt="Arduino Logo" loading="lazy">
-                <img src="/img/logos/tcpip_logo.png" alt="TCP/IP Logo" loading="lazy">
+                <img src="/assets/logos/python_logo.png" alt="Python Logo" loading="lazy">
+                <img src="/assets/logos/arduino_logo.png" alt="Arduino Logo" loading="lazy">
+                <img src="/assets/logos/tcpip_logo.png" alt="TCP/IP Logo" loading="lazy">
               </p>
               <p class="card-text">This is a multithreaded Python code in which
                 I use data from a Sensor to plot it, send it to Arduino to use
@@ -727,20 +727,20 @@
           <div data-aos="zoom-in" class="card the-card">
             <div class="card-img-parent">
               <picture>
-                <source srcset="/img/projects/laravel-app.webp" type="image/webp">
-                <img class="card-img-top" src="/img/projects/laravel-app.png" alt="Laravel Fullstack Application with Admin page." loading="lazy">
+                <source srcset="/assets/projects/laravel-app.webp" type="image/webp">
+                <img class="card-img-top" src="/assets/projects/laravel-app.png" alt="Laravel Fullstack Application with Admin page." loading="lazy">
               </picture>
             </div>
             <div class="card-body">
               <h4 class="card-title">Administrate Users Site</h4>
               <p class="tehnologies-used">
-                <img src="/img/logos/html_logo.png" alt="HTML Logo" loading="lazy">
-                <img src="/img/logos/css_logo.png" alt="CSS Logo" loading="lazy">
-                <img src="/img/logos/javascript_logo.png" alt="JavaScript Logo" loading="lazy">
-                <img src="/img/logos/bootstrap_logo.png" alt="Bootstrap Logo" loading="lazy">
-                <img src="/img/logos/mysql_logo.svg" alt="MySQL Logo" loading="lazy">
-                <img src="/img/logos/php_logo.png" alt="PHP Logo" loading="lazy">
-                <img src="/img/logos/laravel_logo.png" alt="Laravel Logo" loading="lazy">
+                <img src="/assets/logos/html_logo.png" alt="HTML Logo" loading="lazy">
+                <img src="/assets/logos/css_logo.png" alt="CSS Logo" loading="lazy">
+                <img src="/assets/logos/javascript_logo.png" alt="JavaScript Logo" loading="lazy">
+                <img src="/assets/logos/bootstrap_logo.png" alt="Bootstrap Logo" loading="lazy">
+                <img src="/assets/logos/mysql_logo.svg" alt="MySQL Logo" loading="lazy">
+                <img src="/assets/logos/php_logo.png" alt="PHP Logo" loading="lazy">
+                <img src="/assets/logos/laravel_logo.png" alt="Laravel Logo" loading="lazy">
               </p>
               <p class="card-text">This is a web application in Laravel with a
                 register page, a login page and an admin page in which the admin
@@ -792,8 +792,8 @@
         <div class="col-lg-4 col-md-12 text-center" data-aos="fade-left">
           <div class="maple-container">
             <picture>
-                <source srcset="/img/Maple.webp" type="image/webp">
-                <img src="/img/Maple.png" alt="Maple the Calico Cat - Chief Morale Officer" class="maple-img" loading="lazy">
+                <source srcset="/assets/Maple.webp" type="image/webp">
+                <img src="/assets/Maple.png" alt="Maple the Calico Cat - Chief Morale Officer" class="maple-img" loading="lazy">
             </picture>
             <p class="maple-caption mt-2">F. D. Maple, Chief Morale Officer</p>
           </div>
@@ -980,7 +980,7 @@
               <h6 class="time-spend"><i class="far fa-calendar-alt"></i> October 2023 - Present</h6>
               <hr class="light">
               <h5 class="work-description">PhD candidate at UPB 
-                <img src="/img/logos/poli.png" alt="University POLITEHNICA of Bucharest" class="poli-img" loading="lazy"> 
+                <img src="/assets/logos/poli.png" alt="University POLITEHNICA of Bucharest" class="poli-img" loading="lazy">
                 focusing on 
                 <span class="text-highlight-color">Computer Vision</span> and 
                 <span class="text-highlight-color">Robotics</span>, under the supervision of 
@@ -992,7 +992,7 @@
               <hr class="light">
               <h5 class="work-description">
                 Faculty of Automatic Control and Computers at UPB
-              <img src="/img/logos/poli.png" alt="University POLITEHNICA of Bucharest" class="poli-img" loading="lazy">.
+              <img src="/assets/logos/poli.png" alt="University POLITEHNICA of Bucharest" class="poli-img" loading="lazy">.
               Specialized in
               <span class="text-highlight-color">Deep Learning</span>,
               <span class="text-highlight-color">Computer Vision</span>,
@@ -1007,7 +1007,7 @@
               <hr class="light">
               <h5 class="work-description">
                 Faculty of Mechanical and Mechatronic Engineering at UPB
-                <img src="/img/logos/poli.png" alt="University POLITEHNICA of Bucharest" class="poli-img" loading="lazy">.
+                <img src="/assets/logos/poli.png" alt="University POLITEHNICA of Bucharest" class="poli-img" loading="lazy">.
                 Gained hands-on experience in mechanical, electrical, and software
                 aspects of robotics, building a
                 <span class="text-highlight-color">drone</span> and a
@@ -1044,9 +1044,9 @@
       <div class="body-of-tabs" data-aos="fade-up">
         <div class="certificate-tabs">
           <div class="buttons-cert-parent">
-            <button id="google-button" class="tab-link" type="button" name="button"><img src="/img/google-logo.ico" alt="Google Logo"> Google Workshop</button>
-            <button id="udemy-button" class="tab-link" type="button" name="button"><img src="/img/udemy-logo.svg" alt="Udemy Logo"> Udemy</button>
-            <button id="codecademy-button" class="tab-link" type="button" name="button"><img src="/img/codecademy-logo.ico" alt="CodeCademy Logo">CodeCademy</button>
+            <button id="google-button" class="tab-link" type="button" name="button"><img src="/assets/google-logo.ico" alt="Google Logo"> Google Workshop</button>
+            <button id="udemy-button" class="tab-link" type="button" name="button"><img src="/assets/udemy-logo.svg" alt="Udemy Logo"> Udemy</button>
+            <button id="codecademy-button" class="tab-link" type="button" name="button"><img src="/assets/codecademy-logo.ico" alt="CodeCademy Logo">CodeCademy</button>
             <button id="freecodecamp-button" class="tab-link" type="button" name="button"><i class="fab fa-free-code-camp"></i> FreeCodeCamp</button>
           </div>
         </div>
@@ -1054,26 +1054,26 @@
         <div id="google-content" class="tab-content">
           <div class="row padding">
           <div class="col-md-4 col-sm-12 img-parent-cert">
-              <a class="certificate-a" href="img/diplomas/google/Diploma-Applied-ML.pdf" target="_blank">
+              <a class="certificate-a" href="assets/diplomas/google/Diploma-Applied-ML.pdf" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/google/applied-ml.webp" type="image/webp">
-                  <img class="certificate-img google-img" src="/img/diplomas/google/applied-ml.png" alt="Diploma Applied Machine Learning June 2023" loading="lazy">
+                  <source srcset="/assets/diplomas/google/applied-ml.webp" type="image/webp">
+                  <img class="certificate-img google-img" src="/assets/diplomas/google/applied-ml.png" alt="Diploma Applied Machine Learning June 2023" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
-              <a class="certificate-a" href="img/diplomas/google/Diploma-Android-Fundamentals-iulie-2021-10-SEBASTIAN-MOCANU.pdf" target="_blank">
+              <a class="certificate-a" href="assets/diplomas/google/Diploma-Android-Fundamentals-iulie-2021-10-SEBASTIAN-MOCANU.pdf" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/google/android.webp" type="image/webp">
-                  <img class="certificate-img google-img" src="/img/diplomas/google/android.png" alt="Diploma Android Fundamentals Junly 2021 10 SEBASTIAN MOCANU" loading="lazy">
+                  <source srcset="/assets/diplomas/google/android.webp" type="image/webp">
+                  <img class="certificate-img google-img" src="/assets/diplomas/google/android.png" alt="Diploma Android Fundamentals Junly 2021 10 SEBASTIAN MOCANU" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
-              <a href="img/diplomas/google/Diploma-Python-G2-29-MOCANU-SEBASTIAN.pdf" target="_blank">
+              <a href="assets/diplomas/google/Diploma-Python-G2-29-MOCANU-SEBASTIAN.pdf" target="_blank">
                 <picture>
-                    <source srcset="/img/diplomas/google/python.webp" type="image/webp">
-                    <img class="certificate-img google-img" src="/img/diplomas/google/python.png" alt="Diploma Python G2 February 2021 29 SEBASTIAN MOCANU" loading="lazy">
+                    <source srcset="/assets/diplomas/google/python.webp" type="image/webp">
+                    <img class="certificate-img google-img" src="/assets/diplomas/google/python.png" alt="Diploma Python G2 February 2021 29 SEBASTIAN MOCANU" loading="lazy">
                 </picture>
               </a>
             </div>
@@ -1085,24 +1085,24 @@
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.udemy.com/certificate/UC-e601df20-91a5-47f5-b0ad-6a6fc1d23003/" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/udemy/DL-Advanced-CV.webp" type="image/webp">
-                    <img class="certificate-img udemy-img" src="/img/diplomas/udemy/DL-Advanced-CV.jpg" alt="Deep Learning: Advanced Computer Vision (GANs, SSD, +More!) Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/udemy/DL-Advanced-CV.webp" type="image/webp">
+                    <img class="certificate-img udemy-img" src="/assets/diplomas/udemy/DL-Advanced-CV.jpg" alt="Deep Learning: Advanced Computer Vision (GANs, SSD, +More!) Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.udemy.com/certificate/UC-9f567132-4d4d-456d-94b2-c880ea30eb6f/" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/udemy/PyTorch-for-DL-Zero-to-Mastery.webp" type="image/webp">
-                  <img class="certificate-img udemy-img" src="/img/diplomas/udemy/PyTorch-for-DL-Zero-to-Mastery.jpg" alt="PyTorch for Deep Learning in 2023: Zero to Mastery Bootcamp Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/udemy/PyTorch-for-DL-Zero-to-Mastery.webp" type="image/webp">
+                  <img class="certificate-img udemy-img" src="/assets/diplomas/udemy/PyTorch-for-DL-Zero-to-Mastery.jpg" alt="PyTorch for Deep Learning in 2023: Zero to Mastery Bootcamp Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.udemy.com/certificate/UC-af657382-8699-4ded-a3ec-0aa0929e0fc5/" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/udemy/PyTorch-for-DL-with-Python-Bootcamp.webp" type="image/webp">
-                    <img class="certificate-img udemy-img" src="/img/diplomas/udemy/PyTorch-for-DL-with-Python-Bootcamp.jpg" alt="PyTorch for Deep Learning with Python Bootcamp Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/udemy/PyTorch-for-DL-with-Python-Bootcamp.webp" type="image/webp">
+                    <img class="certificate-img udemy-img" src="/assets/diplomas/udemy/PyTorch-for-DL-with-Python-Bootcamp.jpg" alt="PyTorch for Deep Learning with Python Bootcamp Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
@@ -1112,24 +1112,24 @@
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.udemy.com/certificate/UC-6c3aee28-6e50-463d-b9fd-3dde7ba1e45d/" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/udemy/DSA-Java.webp" type="image/webp">
-                    <img class="certificate-img udemy-img" src="/img/diplomas/udemy/DSA-Java.jpg" alt="Data Structures and Algorithms: Deep Dive Using Java Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/udemy/DSA-Java.webp" type="image/webp">
+                    <img class="certificate-img udemy-img" src="/assets/diplomas/udemy/DSA-Java.jpg" alt="Data Structures and Algorithms: Deep Dive Using Java Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.udemy.com/certificate/UC-a55ab9c9-f40c-44d8-9eaa-52c01fb80a4e/" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/udemy/NN-in-Java.webp" type="image/webp">
-                  <img class="certificate-img udemy-img" src="/img/diplomas/udemy/NN-in-Java.jpg" alt="Create a Neural Network in Java Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/udemy/NN-in-Java.webp" type="image/webp">
+                  <img class="certificate-img udemy-img" src="/assets/diplomas/udemy/NN-in-Java.jpg" alt="Create a Neural Network in Java Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.udemy.com/certificate/UC-b0fadb88-6b38-4e97-8352-70c8d4d24028/" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/udemy/SpringBoot-Testing.webp" type="image/webp">
-                    <img class="certificate-img udemy-img" src="/img/diplomas/udemy/SpringBoot-Testing.jpg" alt="Testing Spring Boot: Beginner to Guru Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/udemy/SpringBoot-Testing.webp" type="image/webp">
+                    <img class="certificate-img udemy-img" src="/assets/diplomas/udemy/SpringBoot-Testing.jpg" alt="Testing Spring Boot: Beginner to Guru Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
@@ -1139,24 +1139,24 @@
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.udemy.com/certificate/UC-7c8f7fa0-b0dc-4ce6-a38d-57ca63029726/" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/udemy/Spring-Hibernate-SpringBoot.webp" type="image/webp">
-                    <img class="certificate-img udemy-img" src="/img/diplomas/udemy/Spring-Hibernate-SpringBoot.jpg" alt="Spring Boot, Spring & Hibernate for Beginners Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/udemy/Spring-Hibernate-SpringBoot.webp" type="image/webp">
+                    <img class="certificate-img udemy-img" src="/assets/diplomas/udemy/Spring-Hibernate-SpringBoot.jpg" alt="Spring Boot, Spring & Hibernate for Beginners Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.udemy.com/certificate/UC-99245456-fd2b-45f4-8ce1-97cad9515ea4/" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/udemy/ml.webp" type="image/webp">
-                    <img class="certificate-img udemy-img" src="/img/diplomas/udemy/ml.jpg" alt="Machine Learning, Data Science and Deep Learning with Python Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/udemy/ml.webp" type="image/webp">
+                    <img class="certificate-img udemy-img" src="/assets/diplomas/udemy/ml.jpg" alt="Machine Learning, Data Science and Deep Learning with Python Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.udemy.com/certificate/UC-cb5494d8-7edb-4210-ab4e-90fd93b8ef61/" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/udemy/django.webp" type="image/webp">
-                  <img class="certificate-img udemy-img" src="/img/diplomas/udemy/django.jpg" alt="Python and Django Full Stack Web Developer Bootcamp Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/udemy/django.webp" type="image/webp">
+                  <img class="certificate-img udemy-img" src="/assets/diplomas/udemy/django.jpg" alt="Python and Django Full Stack Web Developer Bootcamp Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
@@ -1168,24 +1168,24 @@
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.codecademy.com/profiles/Brittle23/certificates/d3f89367b558583e361640f778191345" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/codecademy/java-code.webp" type="image/webp">
-                  <img class="certificate-img codecademy-img" src="/img/diplomas/codecademy/java-code.jpg" alt="Learn Java Course Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/codecademy/java-code.webp" type="image/webp">
+                  <img class="certificate-img codecademy-img" src="/assets/diplomas/codecademy/java-code.jpg" alt="Learn Java Course Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.codecademy.com/profiles/Brittle23/certificates/6c152bd262967f8c941c9707ed636bda" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/codecademy/python-code.webp" type="image/webp">
-                  <img class="certificate-img codecademy-img" src="/img/diplomas/codecademy/python-code.jpg" alt="Learn Python 3 Course Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/codecademy/python-code.webp" type="image/webp">
+                  <img class="certificate-img codecademy-img" src="/assets/diplomas/codecademy/python-code.jpg" alt="Learn Python 3 Course Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.codecademy.com/profiles/Brittle23/certificates/b74a2390dfc4127fa5d43fe147425ad0" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/codecademy/cpp.webp" type="image/webp">
-                  <img class="certificate-img codecademy-img" src="/img/diplomas/codecademy/cpp.jpg" alt="Learn C++ Course Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/codecademy/cpp.webp" type="image/webp">
+                  <img class="certificate-img codecademy-img" src="/assets/diplomas/codecademy/cpp.jpg" alt="Learn C++ Course Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
@@ -1195,24 +1195,24 @@
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.codecademy.com/profiles/Brittle23/certificates/65f0ff88f4fc58e0536b3b51648dff24" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/codecademy/csharp.webp" type="image/webp">
-                  <img class="certificate-img codecademy-img" src="/img/diplomas/codecademy/csharp.jpg" alt="Learn C# Course Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/codecademy/csharp.webp" type="image/webp">
+                  <img class="certificate-img codecademy-img" src="/assets/diplomas/codecademy/csharp.jpg" alt="Learn C# Course Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.codecademy.com/profiles/Brittle23/certificates/d24ce3aa4ed99ac04afffec4a78e2e44" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/codecademy/php.webp" type="image/webp">
-                  <img class="certificate-img codecademy-img" src="/img/diplomas/codecademy/php.jpg" alt="Learn PHP Course Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/codecademy/php.webp" type="image/webp">
+                  <img class="certificate-img codecademy-img" src="/assets/diplomas/codecademy/php.jpg" alt="Learn PHP Course Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.codecademy.com/profiles/Brittle23/certificates/705dcb15de0da4dd9d9fc4f3274b430e" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/codecademy/js-code.webp" type="image/webp">
-                  <img class="certificate-img codecademy-img" src="/img/diplomas/codecademy/js-code.jpg" alt="Learn JavaScript Course Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/codecademy/js-code.webp" type="image/webp">
+                  <img class="certificate-img codecademy-img" src="/assets/diplomas/codecademy/js-code.jpg" alt="Learn JavaScript Course Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
@@ -1222,24 +1222,24 @@
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.codecademy.com/profiles/Brittle23/certificates/5ec9a3897d4c940011f50142" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/codecademy/aspnet.webp" type="image/webp">
-                  <img class="certificate-img codecademy-img" src="/img/diplomas/codecademy/aspnet.jpg" alt="Build Web Apps with ASP.NET Skill Path Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/codecademy/aspnet.webp" type="image/webp">
+                  <img class="certificate-img codecademy-img" src="/assets/diplomas/codecademy/aspnet.jpg" alt="Build Web Apps with ASP.NET Skill Path Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.codecademy.com/profiles/Brittle23/certificates/3a62023b0054dc793edc0adecd715fd7" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/codecademy/responsive.webp" type="image/webp">
-                  <img class="certificate-img codecademy-img" src="/img/diplomas/codecademy/responsive.jpg" alt="Learn Responsive Design Course Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/codecademy/responsive.webp" type="image/webp">
+                  <img class="certificate-img codecademy-img" src="/assets/diplomas/codecademy/responsive.jpg" alt="Learn Responsive Design Course Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.codecademy.com/profiles/Brittle23/certificates/36ae898a1d1c8524815305b2d1d2ebab" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/codecademy/js-sites.webp" type="image/webp">
-                    <img class="certificate-img codecademy-img" src="/img/diplomas/codecademy/js-sites.jpg" alt="Building Interactive JavaScript Websites Course Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/codecademy/js-sites.webp" type="image/webp">
+                    <img class="certificate-img codecademy-img" src="/assets/diplomas/codecademy/js-sites.jpg" alt="Building Interactive JavaScript Websites Course Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
@@ -1251,24 +1251,24 @@
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.freecodecamp.org/certification/brittle/machine-learning-with-python-v7" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/freecodecamp/machine-learning-with-python.webp" type="image/webp">
-                  <img class="certificate-img freecodecamp-img" src="/img/diplomas/freecodecamp/machine-learning-with-python.png" alt="Machine Learning with Python Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/freecodecamp/machine-learning-with-python.webp" type="image/webp">
+                  <img class="certificate-img freecodecamp-img" src="/assets/diplomas/freecodecamp/machine-learning-with-python.png" alt="Machine Learning with Python Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.freecodecamp.org/certification/brittle/data-analysis-with-python-v7" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/freecodecamp/data-analysis-with-python.webp" type="image/webp">
-                  <img class="certificate-img freecodecamp-img" src="/img/diplomas/freecodecamp/data-analysis-with-python.png" alt="Data Analysis with Python Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/freecodecamp/data-analysis-with-python.webp" type="image/webp">
+                  <img class="certificate-img freecodecamp-img" src="/assets/diplomas/freecodecamp/data-analysis-with-python.png" alt="Data Analysis with Python Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.freecodecamp.org/certification/brittle/scientific-computing-with-python-v7" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/freecodecamp/scientific-computing-with-python.webp" type="image/webp">
-                  <img class="certificate-img freecodecamp-img" src="/img/diplomas/freecodecamp/scientific-computing-with-python.png" alt="Scientific Computing with Python Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/freecodecamp/scientific-computing-with-python.webp" type="image/webp">
+                  <img class="certificate-img freecodecamp-img" src="/assets/diplomas/freecodecamp/scientific-computing-with-python.png" alt="Scientific Computing with Python Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
@@ -1277,24 +1277,24 @@
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.freecodecamp.org/certification/brittle/front-end-development-libraries" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/freecodecamp/front-end.webp" type="image/webp">
-                  <img class="certificate-img freecodecamp-img" src="/img/diplomas/freecodecamp/front-end.png" alt="Front End Development Libraries Certificate" loading="lazy">
+                  <source srcset="/assets/diplomas/freecodecamp/front-end.webp" type="image/webp">
+                  <img class="certificate-img freecodecamp-img" src="/assets/diplomas/freecodecamp/front-end.png" alt="Front End Development Libraries Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.freecodecamp.org/certification/brittle/javascript-algorithms-and-data-structures" target="_blank">
                 <picture>
-                  <source srcset="img/diplomas/freecodecamp/js-algo.webp" type="image/webp">
-                  <img class="certificate-img freecodecamp-img" src="img/diplomas/freecodecamp/js-algo.png" alt="JavaScript Algorithms and Data Structures Certificate" loading="lazy">
+                  <source srcset="assets/diplomas/freecodecamp/js-algo.webp" type="image/webp">
+                  <img class="certificate-img freecodecamp-img" src="assets/diplomas/freecodecamp/js-algo.png" alt="JavaScript Algorithms and Data Structures Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.freecodecamp.org/certification/brittle/responsive-web-design" target="_blank">
                 <picture>
-                  <source srcset="img/diplomas/freecodecamp/resp-web.webp" type="image/webp">
-                  <img class="certificate-img freecodecamp-img" src="img/diplomas/freecodecamp/resp-web.png" alt="Responsive Web Design Certificate" loading="lazy">
+                  <source srcset="assets/diplomas/freecodecamp/resp-web.webp" type="image/webp">
+                  <img class="certificate-img freecodecamp-img" src="assets/diplomas/freecodecamp/resp-web.png" alt="Responsive Web Design Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
@@ -1356,7 +1356,7 @@
         <ul class="contact-links">
           <li class="contact-list">
             <a href="https://scholar.google.com/citations?user=osyBED4AAAAJ&hl=en" target="_blank" class="personal-links">
-              <img src="/img/logos/Google_Scholar_logo.svg" alt="Google Scholar Logo">
+              <img src="/assets/logos/Google_Scholar_logo.svg" alt="Google Scholar Logo">
               Google Scholar
             </a>
           </li>
@@ -1397,7 +1397,7 @@
         <ul class="contact-links">
           <li class="contact-list">
             <a href="https://huggingface.co/brittleru" target="_blank" class="personal-links">
-              <img src="/img/logos/hugging-face.svg" alt="Hugging Face Logo" class="hf-icon">
+              <img src="/assets/logos/hugging-face.svg" alt="Hugging Face Logo" class="hf-icon">
               Hugging Face
             </a>
           </li>
@@ -1408,7 +1408,7 @@
           </li>
           <li class="contact-list">
             <a href="https://www.codewars.com/users/Brittle" target="_blank" class="personal-links">
-              <img src="/img/logos/codewars-logo-icon.svg" alt="CodeWars logo">
+              <img src="/assets/logos/codewars-logo-icon.svg" alt="CodeWars logo">
               CodeWars
             </a>
           </li>
@@ -1426,8 +1426,8 @@
       <div class="cv-popup">
         <div id="popup-ele-id" class="popup-elements slide-in">
           <p>Which language and style would you prefer?</p>
-          <a id="europass" href="/cv/Sebastian-Mocanu-CV-RO.pdf" target="_blank" class="btn btn-outline-secondary btn-primary btn-lg left">Europass (RO)</a>
-          <a id="latex" href="/cv/Sebastian-Mocanu-CV-EN.pdf" target="_blank" class="btn btn-outline-secondary btn-primary btn-lg right">LaTeX (EN)</a>
+          <a id="europass" href="/assets/cv/Sebastian-Mocanu-CV-RO.pdf" target="_blank" class="btn btn-outline-secondary btn-primary btn-lg left">Europass (RO)</a>
+          <a id="latex" href="/assets/cv/Sebastian-Mocanu-CV-EN.pdf" target="_blank" class="btn btn-outline-secondary btn-primary btn-lg right">LaTeX (EN)</a>
           <div id="pointer"></div>
         </div>
       </div>
@@ -1451,8 +1451,8 @@
     </div>
   </footer>
 
-  <script type="text/javascript" src="/aos/scripts/popper_v2_11_8.min.js" defer></script>
-  <script type="text/javascript" src="/aos/scripts/aos_v3_0_0.js" defer></script>
+  <script type="text/javascript" src="/assets/vendor/aos/scripts/popper_v2_11_8.min.js" defer></script>
+  <script type="text/javascript" src="/assets/vendor/aos/scripts/aos_v3_0_0.js" defer></script>
   <script type="text/javascript" src="scripts/particles.js" defer></script>
   <script type="text/javascript" src="scripts/app.min.js" defer></script>
 

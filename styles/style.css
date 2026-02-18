@@ -131,7 +131,7 @@ body {
 }
 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("../img/hamburger.svg");
+  background-image: url("../assets/hamburger.svg");
 }
 
 @viewport {
