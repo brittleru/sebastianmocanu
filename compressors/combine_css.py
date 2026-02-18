@@ -7,6 +7,7 @@ STYLES_DIR = BASE_DIR / "styles"
 # Order or the CSS file paths matter for the final output 
 CSS_FILE_PATHS = [
     STYLES_DIR / "bootstrap_v4_0_0.min.css",
+    STYLES_DIR / "fonts.css",
     STYLES_DIR / "style.min.css",
     BASE_DIR / "fontawesome-free-5.15.4-web" / "css" / "all.min.css",
     BASE_DIR / "aos" / "styles" / "aos_v3_0_0.css"

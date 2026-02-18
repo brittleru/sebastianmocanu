@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -36,11 +36,11 @@
     }
   </style>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://fonts.gstatic.com/s/sharetechmono/v15/J7aHnp1uDWRBEqV98dVQztYldFcLowEF.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/img/sebastian-mocanu.webp" as="image" type="image/webp">
+  <link rel="preload" href="/fonts/poppins-v24-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/poppins-v24-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/poppins-v24-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/share-tech-mono-v16-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/img/Sebastian-Mocanu-Profile-Picture.webp" as="image" type="image/webp">
 
   <!-- Open Graph / Social Media tags that control how the page appears when shared (e.g., linkedin or others) -->
   <meta property="og:type" content="website">
@@ -52,6 +52,7 @@
   <meta property="og:image:secure_url" content="https://sebastianmocanu.com/img/sebastian-mocanu-social.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:alt" content="Sebastian Mocanu Profile Picture - AI Research Scientist and PhD Candidate">
   <meta property="og:locale" content="en_US">
 
@@ -76,9 +77,8 @@
   <meta name="geo.position" content="44.4268;26.1025">
   <meta name="ICBM" content="44.4268, 26.1025">
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Share+Tech+Mono&display=swap">
   <link rel="stylesheet" href="/styles/combined.min.css">
-  
+
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/x-icon" sizes="any" href="/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon_stuff/apple-touch-icon.png">
@@ -185,6 +185,7 @@
       "https://openreview.net/profile?id=%7ESebastian_Mocanu1",
       "https://dblp.org/pid/413/6896.html",
       "https://www.semanticscholar.org/author/Sebastian-Mocanu/2373605819",
+      "https://arxiv.org/search/cs?searchtype=author&query=Mocanu%2C+Sebastian",
       "https://www.webofscience.com/wos/author/record/ACT-8528-2022",
       "https://crescdi.pub.ro/#/profile/464039",
       "https://www.brainmap.ro/sebastian-mocanu",
@@ -193,7 +194,9 @@
       "https://www.codewars.com/users/Brittle",
       "https://leetcode.com/u/diemetal851/",
       "https://www.freecodecamp.org/brittle",
-      "https://www.codecademy.com/profiles/Brittle23"
+      "https://www.codecademy.com/profiles/Brittle23",
+      "https://x.com/brittleru",
+      "https://www.udemy.com/user/mocanu-sebastian-2/"
     ],
     "seeks": {
       "@type": "Demand",
@@ -241,7 +244,7 @@
 <body>
   <nav class="navbar navbar-expand-md sticky-top justify-content-end" id="navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" id="navbar-anch" href="">
+      <a class="navbar-brand" id="navbar-anch" href="/">
         <picture>
           <source id="logoSource" srcset="/img/logo-dark-theme.webp" type="image/webp">
           <img id="logoImg" src="/img/logo-dark-theme.png" alt="Sebastian Mocanu Logo with animated character" fetchpriority="high">
@@ -255,6 +258,9 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a href="#welcome-section" class="nav-link nav-a">Welcome</a>
+          </li>
+          <li class="nav-item">
+            <a href="#publications" class="nav-link nav-a">Publications</a>
           </li>
           <li class="nav-item">
             <a href="#projects" class="nav-link nav-a">Projects</a>
@@ -283,8 +289,8 @@
     <div class="container welcome-stuff">
       <div class="photo-welcome left" data-aos="zoom-in-right">
         <picture>
-          <source srcset="/img/sebastian-mocanu.webp" type="image/webp">
-          <img id="photo-me" src="/img/sebastian-mocanu.jpeg" alt="Sebastian Mocanu Profile Picture - AI Research Scientist and PhD Candidate"  width="400" height="400" fetchpriority="high">
+          <source srcset="/img/Sebastian-Mocanu-Profile-Picture.webp" type="image/webp">
+          <img id="photo-me" src="/img/Sebastian-Mocanu-Profile-Picture.jpeg" alt="Sebastian Mocanu Profile Picture - AI Research Scientist and PhD Candidate"  width="400" height="400" fetchpriority="high">
         </picture>
         <div class="">
           <h2 id="writing-text" class="text-highlight-color">
@@ -297,19 +303,215 @@
 
       <div class="about-me-welcome right" data-aos="zoom-in-left">
         <h1 class="text-highlight-color" style="font-size: 1.75rem;">Hello, Sebastian here</h1>
-        <h5>I'm excited for opportunities to work on
-          <span class="text-highlight-color">research projects</span>.
-          If you'd like to collaborate, feel free to reach out.
+        <h5>I'm a <span class="text-highlight-color">PhD candidate</span> at
+          University POLITEHNICA of Bucharest, researching
+          <span class="text-highlight-color">Computer Vision</span> and
+          <span class="text-highlight-color">Robotics</span>.
         </h5>
-        <h5>I regularly read computer science literature, which keeps me well-versed in the latest research,
-          market trends, and the needs of the IT audience.</h5>
-        <h5>I'm eager to grow my professional expertise by embracing new challenges and experiences.</h5>
+        <h5>My work focuses on vision-based control for
+          <span class="text-highlight-color">autonomous UAVs</span>, combining
+          self-supervised learning with efficient neural networks for
+          <span class="text-highlight-color">real-time drone flight</span>.
+        </h5>
+        <h5>I'm always open to <span class="text-highlight-color">research collaborations</span>.
+          If our interests overlap, feel free to reach out.
+        </h5>
+
+        <div class="welcome-profile-icons">
+          <a href="https://github.com/brittleru" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i> 
+          </a>
+          <a href="https://www.linkedin.com/in/sebastian-mocanu-b76a61184/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i> 
+          </a>
+          <a href="https://scholar.google.com/citations?user=osyBED4AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
+            <img src="/img/logos/Google_Scholar_logo.svg" alt="Google Scholar Logo">
+          </a>
+          <a href="https://orcid.org/0009-0007-0313-4724" target="_blank" rel="noopener" aria-label="ORCID">
+            <img src="/img/logos/orcid-logo.svg" alt="ORCID Logo">
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Go up? -->
-  <a id="button"></a>
+  <a id="button" href="#" aria-label="Back to top"></a>
+
+  <section id="publications">
+    <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h2 class="display-4 subtitle-text-color">Publications</h2>
+        </div>
+        <hr class="">
+        <br><br>
+      </div>
+    </div>
+
+    <div class="pub-list">
+      <!-- ICCV 2025 -->
+      <article class="pub-card" data-aos="fade-up">
+        <div class="pub-top">
+          <div class="pub-meta">
+            <span class="pub-venue venue-accepted">ICCV 2025</span>
+            <span class="pub-categories">
+              <span class="pub-cat cat-primary"><i class="fas fa-trophy"></i> Oral</span>
+              <span class="pub-cat cat-secondary">Poster</span>
+            </span>
+            <span class="pub-year">October 2025</span>
+          </div>
+          <h3 class="pub-title">
+            <a href="https://arxiv.org/abs/2507.19878" target="_blank" rel="noopener">
+              Efficient Self-Supervised Neuro-Analytic Visual Servoing for Real-time Quadrotor Control
+            </a>
+          </h3>
+        </div>
+
+        <div class="pub-body">
+          <div class="pub-visual pub-visual-video" >
+            <video autoplay muted loop playsinline controls preload="metadata" poster="/img/publications/Drone-Car-ICCV-poster.webp" aria-label="Demo video showcasing NSER-IBVS">
+              <source src="/img/publications/Drone-Car-ICCV-Preview-compressed.mp4" type="video/mp4">
+              <img src="/img/publications/Drone-Car-ICCV-poster.webp" alt="Visual servoing quadrotor demo">
+            </video>
+          </div>
+
+          <div class="pub-details">
+            <p class="pub-authors">
+              <span class="me">Sebastian Mocanu</span>, Sebastian-Ion Nae, Mihai-Eugen Barbu, Marius Leordeanu
+            </p>
+            <p class="pub-abstract">
+              Introduces a self-supervised neuro-analytical, cost efficient, model for visual-based quadrotor control in which a small 1.7M parameters student ConvNet learns automatically from an analytical teacher, an improved Image-Based Visual Servoing (IBVS) controller.
+            </p>
+            <div class="pub-links">
+              <a class="pub-link pub-link-pdf" href="https://openaccess.thecvf.com/content/ICCV2025W/EVW/papers/Mocanu_Efficient_Self-Supervised_Neuro-Analytic_Visual_Servoing_for_Real-time_Quadrotor_Control_ICCVW_2025_paper.pdf" target="_blank" rel="noopener">
+                <i class="fas fa-file-pdf"></i> Paper
+              </a>
+              <a class="pub-link pub-link-arxiv" href="https://arxiv.org/abs/2507.19878" target="_blank" rel="noopener">
+                <i class="fas fa-file-alt"></i> arXiv
+              </a>
+              <a class="pub-link pub-link-web" href="https://spacetime-vision-robotics-laboratory.github.io/NSER-IBVS/" target="_blank" rel="noopener">
+                <i class="fas fa-globe"></i> Website
+              </a>
+              <a class="pub-link pub-link-github" href="https://github.com/SpaceTime-Vision-Robotics-Laboratory/nser-ibvs-drone" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> Code
+              </a>
+              <a class="pub-link pub-link-github" href="https://github.com/SpaceTime-Vision-Robotics-Laboratory/mask-splitter" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> mask-splitter
+              </a>
+              <a class="pub-link pub-link-hf" href="https://huggingface.co/collections/brittleru/nser-ibvs-suite" target="_blank" rel="noopener">
+                <img src="/img/logos/hugging-face.svg" alt="Hugging Face Logo" class="hf-icon">
+                Collection
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ERF 2026 -->
+      <article class="pub-card" data-aos="fade-up">
+        <div class="pub-top">
+          <div class="pub-meta">
+            <span class="pub-venue venue-accepted">ERF 2026</span>
+            <span class="pub-categories">
+              <span class="pub-cat cat-primary"><i class="fas fa-award"></i> Pitch</span>
+              <span class="pub-cat cat-secondary">Poster</span>
+            </span>
+            <span class="pub-year">March 2026</span>
+          </div>
+          <h3 class="pub-title">
+            <a href="https://arxiv.org/abs/2602.13440" target="_blank" rel="noopener">
+              Learning on the Fly: Replay-Based Continual Object Perception for Indoor Drones
+            </a>
+          </h3>
+        </div>
+
+        <div class="pub-body">
+          <div class="pub-visual pub-visual-video" >
+            <video autoplay muted loop playsinline controls preload="metadata" poster="/img/publications/Drone-Continual-Learning-ERF-poster.webp">
+              <source src="/img/publications/Drone-Continual-Learning-ERF-Preview-compressed.mp4" type="video/mp4">
+              <img src="/img/publications/Drone-Continual-Learning-ERF-poster.webp" alt="Indoor drone continual object perception">
+            </video>
+          </div>
+
+          <div class="pub-details">
+            <p class="pub-authors">
+              Sebastian-Ion Nae, Mihai-Eugen Barbu, <span class="me">Sebastian Mocanu</span>, Marius Leordeanu
+            </p>
+            <p class="pub-abstract">
+              Introduces a temporally coherent indoor UAV video dataset (14,400 frames) and benchmarks replay-based Class-Incremental Learning (CIL) strategies for resource-constrained drones. Forgetting-Aware Replay (FAR) outperforms other methods under tight memory budgets (5-10%).
+            </p>
+            <div class="pub-links">
+              <a class="pub-link pub-link-pdf" href="https://arxiv.org/pdf/2602.13440" target="_blank" rel="noopener">
+                <i class="fas fa-file-pdf"></i> Paper
+              </a>
+              <a class="pub-link pub-link-arxiv" href="https://arxiv.org/abs/2602.13440" target="_blank" rel="noopener">
+                <i class="fas fa-file-alt"></i> arXiv
+              </a>
+              <a class="pub-link pub-link-web" href="https://spacetime-vision-robotics-laboratory.github.io/learning-on-the-fly-cl/" target="_blank" rel="noopener">
+                <i class="fas fa-globe"></i> Website
+              </a>
+              <a class="pub-link pub-link-hf" href="https://huggingface.co/datasets/sebnae/UAV-IndoorCL" target="_blank" rel="noopener">
+                <img src="/img/logos/hugging-face.svg" alt="Hugging Face Logo" class="hf-icon">
+                Dataset
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Preprint Autonomous Drone 2025 -->
+      <article class="pub-card" data-aos="fade-up">
+        <div class="pub-top">
+          <div class="pub-meta">
+            <span class="pub-venue venue-preprint">Preprint</span>
+            <span class="pub-categories">
+              <span class="pub-cat cat-secondary">Under Review</span>
+            </span>
+            <span class="pub-year">October 2025</span>
+          </div>
+          <h3 class="pub-title">
+            <a href="https://arxiv.org/abs/2510.16624" target="_blank" rel="noopener">
+              Self-Supervised Learning to Fly using Efficient Semantic Segmentation and Metric Depth Estimation for Low-Cost Autonomous UAVs
+            </a>
+          </h3>
+        </div>
+
+        <div class="pub-body">
+          <div class="pub-visual pub-visual-video" >
+            <video autoplay muted loop playsinline controls preload="metadata" poster="/img/publications/Autonom-Drone-Complex-poster.webp">
+              <source src="/img/publications/Autonom-Drone-Complex-Compressed.mp4" type="video/mp4">
+              <img src="/img/publications/Autonom-Drone-Complex-poster.webp" alt="UAV semantic segmentation and depth estimation Demo">
+            </video>
+          </div>
+
+          <div class="pub-details">
+            <p class="pub-authors">
+              <span class="me">Sebastian Mocanu</span>, Emil Slusanschi, Marius Leordeanu
+            </p>
+            <p class="pub-abstract">
+              Presents a vision-only autonomous flight system for small UAVs operating in indoor environments. The system combines semantic segmentation with monocular depth estimation to estimate metric depth and enable obstacle avoidance, scene exploration, and autonomous safe landing.
+            </p>
+            <div class="pub-links">
+              <a class="pub-link pub-link-pdf" href="https://arxiv.org/pdf/2510.16624" target="_blank" rel="noopener">
+                <i class="fas fa-file-pdf"></i> Paper
+              </a>
+              <a class="pub-link pub-link-arxiv" href="https://arxiv.org/abs/2510.16624" target="_blank" rel="noopener">
+                <i class="fas fa-file-alt"></i> arXiv
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="pub-footer">
+      <a href="https://scholar.google.com/citations?user=osyBED4AAAAJ&hl=en" target="_blank" rel="noopener">
+        <i class="fas fa-graduation-cap"></i> View on Google Scholar
+      </a>
+    </div>
+  </section>
 
   <section id="projects">
     <div class="container-fluid padding">
@@ -344,7 +546,7 @@
                 <img src="/img/logos/sql1.png" alt="MySQL Logo" loading="lazy">
               </p>
               <p class="card-text">I worked on this site from scratch, its purpose
-                is to be informative for the students at the SET program. It’s made
+                is to be informative for the students at the SET program. It's made
                 so it is easy to manage, the admin can modify almost every page.</p>
               <a href="http://termo.pub.ro/" target="_blank" class="btn btn-outline-secondary card-button-stl">Check it Out</a>
             </div>
@@ -392,7 +594,7 @@
                 <img src="/img/logos/javascript_logo.png" alt="JavaScript Logo" loading="lazy">
                 <img src="/img/logos/bootstrap_logo.png" alt="Bootstrap Logo" loading="lazy">
               </p>
-              <p class="card-text">For my bachelor’s diploma project, I synthesized
+              <p class="card-text">For my bachelor's diploma project, I synthesized
                 a calculus of 20 pages in a web application in which if some initial
                 data are entered, some coefficients will be calculated, and the user
                 will receive some recommendations.</p>
@@ -575,50 +777,78 @@
             <div class="work-content ">
               <h2 class="text-highlight-color "><i class="fas fa-briefcase i-fix"></i> Work Experience <i class="fas fa-briefcase i-fix"></i></h2>
               <hr>
-              <h3 class="text-highlight-color ">Freelance Web Developer</h3>
-              <h6 class="time-spend"><i class="far fa-calendar-alt"></i> April 2021 - Present</h6>
+
+              <h3 class="text-highlight-color ">AI Research Scientist</h3>
+              <h6 class="time-spend">University POLITEHNICA of Bucharest</h6>
+              <h6 class="time-spend"><i class="far fa-calendar-alt"></i> February 2024 - Present</h6>
               <hr class="light">
-              <h5 class="work-description">Here I've been developing and expanding my knowledge
-                about the full life cycle of a Web app. I improved my sense of aesthetics by using
-                <span class="text-highlight-color">Photoshop</span> and
-                <span class="text-highlight-color">Illustrator</span>,
-                <span class="text-highlight-color">HTML</span>, <span class="text-highlight-color">CSS</span> and
-                <span class="text-highlight-color">JavaScript</span> in order to create responsive
-                website pages. I also enhanced my problem-solving skills by implementing backend services using
-                <span class="text-highlight-color">Django</span> and <span class="text-highlight-color">MySQL</span>
-                to build scalable web apps.
+              <h5 class="work-description">
+                Developing a digital-twin of an indoor testing facility using
+                <span class="text-highlight-color">Unreal Engine</span>, enabling
+                real-world test replication in simulation to validate autonomous
+                drone systems prior to physical deployment. Conducting vision-based
+                autonomous flight experiments within the simulated environment,
+                focusing on <span class="text-highlight-color">Computer Vision</span>,
+                <span class="text-highlight-color">C++</span>, and
+                <span class="text-highlight-color">Python</span>.
+              </h5>
+
+              <h3 class="text-highlight-color ">Research Assistant</h3>
+              <h6 class="time-spend">University POLITEHNICA of Bucharest & Google</h6>
+              <h6 class="time-spend"><i class="far fa-calendar-alt"></i> April 2023 - November 2023</h6>
+              <h6 class="time-spend"><i class="far fa-calendar-alt"></i> June 2022 - April 2023 (Part-time)</h6>
+
+              <hr class="light">
+              <h5 class="work-description">
+                Starting from my master's thesis, I joined a collaboration with
+                <span class="text-highlight-color">Google</span> to develop a fully
+                autonomous vision-based quadcopter. The project progressed from
+                part-time research into a full-time role, where we combined
+                <span class="text-highlight-color">computer vision</span>,
+                <span class="text-highlight-color">control theory</span>, and
+                <span class="text-highlight-color">reinforcement learning</span>
+                to build a drone capable of continuous in-scene flight, autonomously
+                navigating around obstacles while locating its designated landing point.
+              </h5>
+
+              <h3 class="text-highlight-color ">Software Developer</h3>
+              <h6 class="time-spend">Endava</h6>
+              <h6 class="time-spend"><i class="far fa-calendar-alt"></i> December 2021 - April 2023</h6>
+              <hr class="light">
+              <h5 class="work-description">
+                Worked within an <span class="text-highlight-color">Agile</span> team
+                at a multinational banking institution, contributing to the optimization
+                of payment processing backend systems. Our team led the migration of critical
+                <span class="text-highlight-color">Oracle</span> database segments to
+                <span class="text-highlight-color">MongoDB</span>, significantly
+                accelerating read operations and improving system response times.
+                Additionally built a full-stack application for accessing
+                <span class="text-highlight-color">Amazon S3</span> bucket contents,
+                which reduced tooling costs for the testing team.
+              </h5>
+
+              <h3 class="text-highlight-color ">Freelance Web Developer</h3>
+              <h6 class="time-spend"><i class="far fa-calendar-alt"></i> April 2021 - October 2021</h6>
+              <hr class="light">
+              <h5 class="work-description">
+                Designed and developed responsive websites using
+                <span class="text-highlight-color">HTML</span>,
+                <span class="text-highlight-color">CSS</span>,
+                <span class="text-highlight-color">JavaScript</span>, and
+                <span class="text-highlight-color">Django</span>, including the
+                <span class="text-highlight-color"><a href="http://termo.pub.ro/" class="website-link">Thermotechnics Department website</a></span>
+                at UPB.
               </h5>
 
               <h3 class="text-highlight-color ">Waydev</h3>
               <h6 class="time-spend"><i class="far fa-calendar-alt"></i> November 2020 - January 2021</h6>
               <hr class="light">
-              <h5 class="work-description">Here I’ve improved my skills in <span class="text-highlight-color">
-                  software engineering</span>, <span class="text-highlight-color">Agile</span>
-                development and, attention to detail by creating a Worker to
-                sharpen the cloning and processing service of
-                <span class="text-highlight-color">Git</span> repositories and
-                because of that, I've strengthened my knowledge and understanding of the Git version control system.
-                The technologies I used here were <span class="text-highlight-color">Python</span>,
-                <span class="text-highlight-color">FastAPI</span>, <span class="text-highlight-color">Laravel</span>
-                (<span class="text-highlight-color">PHP</span>), <span class="text-highlight-color">MySQL</span>,
-                <span class="text-highlight-color">HTML</span>, <span class="text-highlight-color">CSS</span>
-                (<span class="text-highlight-color">Bootstrap</span>) and
-                <span class="text-highlight-color">JavaScript</span>. In this place
-                I worked with a team of awesome and hardworking people, and we challenged
-                and helped each other to be the best version of ourselves.
-              </h5>
-
-              <h3 class="text-highlight-color ">Marco & Alex</h3>
-              <h6 class="time-spend"><i class="far fa-calendar-alt"></i> June 2020 - August 2020</h6>
-              <hr class="light">
-              <h5 class="work-description">This is where I improved my <span class="text-highlight-color">
-                  critical thinking </span> and <span class="text-highlight-color">
-                  attention to detail </span> by designing refrigeration installations for
-                various industrial buildings using the thermal calculus to
-                determine the refrigeration power required for the installation.
-                I've used <span class="text-highlight-color">AutoCAD</span>
-                and other tools related to the field.
-
+              <h5 class="work-description">
+                Built a worker service to improve the cloning and processing pipeline
+                for <span class="text-highlight-color">Git</span> repositories using
+                <span class="text-highlight-color">Python</span>,
+                <span class="text-highlight-color">FastAPI</span>, and
+                <span class="text-highlight-color">Laravel</span>.
               </h5>
             </div>
 
@@ -632,62 +862,79 @@
 
               <h2 class="text-highlight-color "><i class="fas fa-gamepad i-fix"></i> Tech Stack <i class="fas fa-gamepad i-fix"></i></h2>
               <hr>
-              <h5 class="work-description">These are the technologies that I've learned until now. I love to learn new things and I'm doing this constantly.</h5>
+              <h5 class="work-description">These are the technologies that I've learned or worked with.</h5>
+              
+              <h3 class="text-highlight-color">AI / ML</h3>
+              <hr class="light">
+              <h5 class="work-description">
+                <span class="text-highlight-color">Python</span>,
+                <span class="text-highlight-color">PyTorch</span>,
+                <span class="text-highlight-color">TensorFlow</span>,
+                <span class="text-highlight-color">OpenCV</span>,
+                <span class="text-highlight-color">CUDA</span>,
+                <span class="text-highlight-color">Hugging Face</span> and
+                <span class="text-highlight-color">Weights & Biases</span>.
+              </h5>
+
+              <h3 class="text-highlight-color">Robotics & Simulation</h3>
+              <hr class="light">
+              <h5 class="work-description">
+                <span class="text-highlight-color">C++</span>,
+                <span class="text-highlight-color">OpenGL</span>,
+                <span class="text-highlight-color">SDL</span>,
+                <span class="text-highlight-color">Unreal Engine</span>,
+                <span class="text-highlight-color">Unity</span>,
+                <span class="text-highlight-color">ROS</span>,
+                <span class="text-highlight-color">Gazebo</span>,
+                <span class="text-highlight-color">Raspberry Pi</span>, and
+                <span class="text-highlight-color">Arduino</span>.
+              </h5>
+              
               <h3 class="text-highlight-color ">Development</h3>
               <hr class="light">
-
               <h5 class="work-description">
                 <span class="text-highlight-color">Java</span>,
-                <span class="text-highlight-color">C</span>,
-                <span class="text-highlight-color">C++</span>,
-                <span class="text-highlight-color">C#</span>,
-                <span class="text-highlight-color">Python</span>,
+                <span class="text-highlight-color">Spring Boot</span>,
                 <span class="text-highlight-color">Django</span>,
                 <span class="text-highlight-color">Flask</span>,
-                <span class="text-highlight-color">PHP</span>,
-                <span class="text-highlight-color">Laravel</span>,
                 <span class="text-highlight-color">MySQL</span>,
+                <span class="text-highlight-color">Oracle</span>,
+                <span class="text-highlight-color">MongoDB</span>,
                 <span class="text-highlight-color">SQLite</span>,
-                <span class="text-highlight-color">Apache</span>,
-                <span class="text-highlight-color">ASP.NET</span>,
-                <span class="text-highlight-color">Android</span> (with Java),
-                <span class="text-highlight-color">Arduino</span>,
-                <span class="text-highlight-color">MATLAB & Simulink</span> and
-                <span class="text-highlight-color">Git</span>.
-
+                <span class="text-highlight-color">Amazon S3</span>,
+                <span class="text-highlight-color">Apache</span> and
+                <span class="text-highlight-color">Android</span> (with Java).
               </h5>
 
               <h3 class="text-highlight-color ">Design</h3>
               <hr class="light">
-
               <h5 class="work-description">
-
                 <span class="text-highlight-color">HTML</span>,
                 <span class="text-highlight-color">CSS</span>,
                 <span class="text-highlight-color">Bootstrap</span>,
                 <span class="text-highlight-color">JavaScript</span>,
                 <span class="text-highlight-color">React</span>,
-                <span class="text-highlight-color">Photoshop</span> and
-                <span class="text-highlight-color">Illustrator</span>.
+                <span class="text-highlight-color">Photoshop</span>,
+                <span class="text-highlight-color">Illustrator</span>,
+                <span class="text-highlight-color">Draw.io</span> and
+                <span class="text-highlight-color">Excalidraw</span>.
               </h5>
 
               <h3 class="text-highlight-color ">Tools</h3>
               <hr class="light">
               <h5 class="work-description">
-                <span class="text-highlight-color">Atom</span>,
-                <span class="text-highlight-color">IntelliJ IDEA</span>,
-                <span class="text-highlight-color">PyCharm</span>,
-                <span class="text-highlight-color">Visual Studio Code</span>,
-                <span class="text-highlight-color">Visual Studio</span>,
-                <span class="text-highlight-color">Android Studio</span>,
-                <span class="text-highlight-color">Notepad++</span>,
-                <span class="text-highlight-color">GitHub</span>,
-                <span class="text-highlight-color">Postman</span>,
-                <span class="text-highlight-color">Xampp</span> and
-                <span class="text-highlight-color">Unity</span>.
+                <span class="text-highlight-color">Docker</span>,
+                <span class="text-highlight-color">Git</span>,
+                <span class="text-highlight-color">GNU/Linux</span>,
+                <span class="text-highlight-color">CMake</span>,
+                <span class="text-highlight-color">Maven</span>,
+                <span class="text-highlight-color">Ruff</span>,
+                <span class="text-highlight-color">mypy</span>,
+                <span class="text-highlight-color">CI/CD</span> and
+                <span class="text-highlight-color">Bash</span>.
+              </h5>
 
             </div>
-
           </div>
         </div>
 
@@ -697,47 +944,52 @@
               <h2 class="text-highlight-color "><i class="fas fa-graduation-cap i-fix"></i> Education <i class="fas fa-graduation-cap i-fix"></i></h2>
               <hr>
 
-              <h3 class="text-highlight-color ">Master's in Artificial Intelligence</h3>
-              <h6 class="time-spend"><i class="far fa-calendar-alt"></i> October 2021 - Present</h6>
+              <h3 class="text-highlight-color">PhD in Computer Science</h3>
+              <h6 class="time-spend"><i class="far fa-calendar-alt"></i> October 2023 - Present</h6>
               <hr class="light">
-              <h5 class="work-description">This master’s degree program is part of
-                the Faculty of Automatic Control and Computers at UPB
-                <img src="/img/logos/poli.png" alt="University POLITEHNICA of Bucharest" id="poli-img" loading="lazy">
-                . I choose to follow this program because
-                I want to learn a lot about every subject of <span class="text-highlight-color">AI
-                </span>, for the moment, my favorite subfields are <span class="text-highlight-color">
-                  Deep Learning</span>, <span class="text-highlight-color">Computer
-                     Vision</span> and <span class="text-highlight-color">Machine
-                Learning</span> subfields.</h5>
+              <h5 class="work-description">PhD candidate at UPB 
+                <img src="/img/logos/poli.png" alt="University POLITEHNICA of Bucharest" class="poli-img" loading="lazy"> 
+                focusing on 
+                <span class="text-highlight-color">Computer Vision</span> and 
+                <span class="text-highlight-color">Robotics</span>, under the supervision of 
+                Prof. Dr. Marius Leordeanu and Prof. Dr. Eng. Emil Slusanschi. Research on visual servoing, autonomous vision-based UAV flight, 
+                and continual learning for drones.</h5>
 
-              <h3 class="text-highlight-color ">Engineer in Mechatronics and Robotics</h3>
+              <h3 class="text-highlight-color ">Master of Science in Artificial Intelligence</h3>
+              <h6 class="time-spend"><i class="far fa-calendar-alt"></i> October 2021 - September 2023</h6>
+              <hr class="light">
+              <h5 class="work-description">
+                Faculty of Automatic Control and Computers at UPB
+              <img src="/img/logos/poli.png" alt="University POLITEHNICA of Bucharest" class="poli-img" loading="lazy">.
+              Specialized in
+              <span class="text-highlight-color">Deep Learning</span>,
+              <span class="text-highlight-color">Computer Vision</span>,
+              <span class="text-highlight-color">Natural Language Processing</span> and
+              <span class="text-highlight-color">Reinforcement Learning</span>.
+              Master's thesis on vision-based autonomous quadcopter control, under supervision of
+              Prof. Dr. Marius Leordeanu.
+              </h5>
+
+              <h3 class="text-highlight-color ">Bachelor of Engineering in Mechatronics and Robotics</h3>
               <h6 class="time-spend"><i class="far fa-calendar-alt"></i> September 2017 - July 2021</h6>
               <hr class="light">
-              <h5 class="work-description">This bachelor's degree program is part
-                of the Faculty of Mechanical and Mechatronic Engineering at UPB
-                <img src="/img/logos/poli.png" alt="University POLITEHNICA of Bucharest" id="poli-img" loading="lazy">.
-                During the years I spent there I
-                learned a lot about the mechanical, electrical, and programmable
-                part of a robot by building a <span class="text-highlight-color">
-                  drone</span> and a <span class="text-highlight-color">robotic arm</span>. </h5>
+              <h5 class="work-description">
+                Faculty of Mechanical and Mechatronic Engineering at UPB
+                <img src="/img/logos/poli.png" alt="University POLITEHNICA of Bucharest" class="poli-img" loading="lazy">.
+                Gained hands-on experience in mechanical, electrical, and software
+                aspects of robotics, building a
+                <span class="text-highlight-color">drone</span> and a
+                <span class="text-highlight-color">robotic arm</span>.
+              </h5>
 
               <h3 class="text-highlight-color ">Psycho-Pedagogical Module I & II</h3>
-              <h6 class="time-spend"><i class="far fa-calendar-alt"></i> September 2017 - Present</h6>
+              <h6 class="time-spend"><i class="far fa-calendar-alt"></i> September 2017 - September 2023</h6>
               <hr class="light">
-              <h5 class="work-description">During bachelors, I finished the first
-                module, being eligible to teach at High school. Now, at
-                masters, I have chosen to also go for the module II, so I can teach
-                 at university or to lead and teach people at work.</h5>
-
-              <h3 class="text-highlight-color ">The session of scientific communications</h3>
-              <hr class="light">
-              <h5 class="work-description">My first time there was
-                when I was in first year of bachelors, where I presented a
-                <span class="text-highlight-color">firefighting drone</span>.
-                The second time was during the second year and I presented the <span class="text-highlight-color">dynamic laser balancing
-                of gyroscope rotors</span>. The third time was in my fourth
-                year by presenting an <span class="text-highlight-color">LCD numbers
-                  reader drone</span>.</h5>
+              <h5 class="work-description">
+                Teaching certification completed alongside
+                bachelor's and master's studies, qualifying for instruction at both
+                high school and university level.
+              </h5>
             </div>
           </div>
         </div>
@@ -768,20 +1020,28 @@
         </div>
 
         <div id="google-content" class="tab-content">
-          <div class="row padding ">
-            <div class="col-md-6 col-sm-12 img-parent-cert">
-              <a class="certificate-a" href="img/diplomas/google/Diploma-Android-Fundamentals-iulie-2021-10-SEBASTIAN-MOCANU.pdf" target="_blank">
+          <div class="row padding">
+          <div class="col-md-4 col-sm-12 img-parent-cert">
+              <a class="certificate-a" href="img/diplomas/google/Diploma-Applied-ML.pdf" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/google/android.webp" type="image/webp">
-                  <img class="certificate-img google-img" src="/img/diplomas/google/android.png" alt="Diploma Android Fundamentals iulie 2021 10 SEBASTIAN MOCANU" loading="lazy">
+                  <source srcset="/img/diplomas/google/applied-ml.webp" type="image/webp">
+                  <img class="certificate-img google-img" src="/img/diplomas/google/applied-ml.png" alt="Diploma Applied Machine Learning June 2023" loading="lazy">
                 </picture>
               </a>
             </div>
-            <div class="col-md-6 col-sm-12 img-parent-cert">
+            <div class="col-md-4 col-sm-12 img-parent-cert">
+              <a class="certificate-a" href="img/diplomas/google/Diploma-Android-Fundamentals-iulie-2021-10-SEBASTIAN-MOCANU.pdf" target="_blank">
+                <picture>
+                  <source srcset="/img/diplomas/google/android.webp" type="image/webp">
+                  <img class="certificate-img google-img" src="/img/diplomas/google/android.png" alt="Diploma Android Fundamentals Junly 2021 10 SEBASTIAN MOCANU" loading="lazy">
+                </picture>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="img/diplomas/google/Diploma-Python-G2-29-MOCANU-SEBASTIAN.pdf" target="_blank">
                 <picture>
                     <source srcset="/img/diplomas/google/python.webp" type="image/webp">
-                    <img class="certificate-img google-img" src="/img/diplomas/google/python.png" alt="Diploma Python G2 februarie 2021 29 SEBASTIAN MOCANU" loading="lazy">
+                    <img class="certificate-img google-img" src="/img/diplomas/google/python.png" alt="Diploma Python G2 February 2021 29 SEBASTIAN MOCANU" loading="lazy">
                 </picture>
               </a>
             </div>
@@ -790,7 +1050,69 @@
 
         <div id="udemy-content" class="tab-content">
           <div class="row padding ">
-            <div class="col-md-6 col-sm-12 img-parent-cert">
+            <div class="col-md-4 col-sm-12 img-parent-cert">
+              <a href="https://www.udemy.com/certificate/UC-e601df20-91a5-47f5-b0ad-6a6fc1d23003/" target="_blank">
+                <picture>
+                  <source srcset="/img/diplomas/udemy/DL-Advanced-CV.webp" type="image/webp">
+                    <img class="certificate-img udemy-img" src="/img/diplomas/udemy/DL-Advanced-CV.jpg" alt="Deep Learning: Advanced Computer Vision (GANs, SSD, +More!) Certificate" loading="lazy">
+                </picture>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-12 img-parent-cert">
+              <a href="https://www.udemy.com/certificate/UC-9f567132-4d4d-456d-94b2-c880ea30eb6f/" target="_blank">
+                <picture>
+                  <source srcset="/img/diplomas/udemy/PyTorch-for-DL-Zero-to-Mastery.webp" type="image/webp">
+                  <img class="certificate-img udemy-img" src="/img/diplomas/udemy/PyTorch-for-DL-Zero-to-Mastery.jpg" alt="PyTorch for Deep Learning in 2023: Zero to Mastery Bootcamp Certificate" loading="lazy">
+                </picture>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-12 img-parent-cert">
+              <a href="https://www.udemy.com/certificate/UC-af657382-8699-4ded-a3ec-0aa0929e0fc5/" target="_blank">
+                <picture>
+                  <source srcset="/img/diplomas/udemy/PyTorch-for-DL-with-Python-Bootcamp.webp" type="image/webp">
+                    <img class="certificate-img udemy-img" src="/img/diplomas/udemy/PyTorch-for-DL-with-Python-Bootcamp.jpg" alt="PyTorch for Deep Learning with Python Bootcamp Certificate" loading="lazy">
+                </picture>
+              </a>
+            </div>
+          </div>
+          
+          <div class="row padding ">
+            <div class="col-md-4 col-sm-12 img-parent-cert">
+              <a href="https://www.udemy.com/certificate/UC-6c3aee28-6e50-463d-b9fd-3dde7ba1e45d/" target="_blank">
+                <picture>
+                  <source srcset="/img/diplomas/udemy/DSA-Java.webp" type="image/webp">
+                    <img class="certificate-img udemy-img" src="/img/diplomas/udemy/DSA-Java.jpg" alt="Data Structures and Algorithms: Deep Dive Using Java Certificate" loading="lazy">
+                </picture>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-12 img-parent-cert">
+              <a href="https://www.udemy.com/certificate/UC-a55ab9c9-f40c-44d8-9eaa-52c01fb80a4e/" target="_blank">
+                <picture>
+                  <source srcset="/img/diplomas/udemy/NN-in-Java.webp" type="image/webp">
+                  <img class="certificate-img udemy-img" src="/img/diplomas/udemy/NN-in-Java.jpg" alt="Create a Neural Network in Java Certificate" loading="lazy">
+                </picture>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-12 img-parent-cert">
+              <a href="https://www.udemy.com/certificate/UC-b0fadb88-6b38-4e97-8352-70c8d4d24028/" target="_blank">
+                <picture>
+                  <source srcset="/img/diplomas/udemy/SpringBoot-Testing.webp" type="image/webp">
+                    <img class="certificate-img udemy-img" src="/img/diplomas/udemy/SpringBoot-Testing.jpg" alt="Testing Spring Boot: Beginner to Guru Certificate" loading="lazy">
+                </picture>
+              </a>
+            </div>
+          </div>
+
+          <div class="row padding ">
+            <div class="col-md-4 col-sm-12 img-parent-cert">
+              <a href="https://www.udemy.com/certificate/UC-7c8f7fa0-b0dc-4ce6-a38d-57ca63029726/" target="_blank">
+                <picture>
+                  <source srcset="/img/diplomas/udemy/Spring-Hibernate-SpringBoot.webp" type="image/webp">
+                    <img class="certificate-img udemy-img" src="/img/diplomas/udemy/Spring-Hibernate-SpringBoot.jpg" alt="Spring Boot, Spring & Hibernate for Beginners Certificate" loading="lazy">
+                </picture>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.udemy.com/certificate/UC-99245456-fd2b-45f4-8ce1-97cad9515ea4/" target="_blank">
                 <picture>
                   <source srcset="/img/diplomas/udemy/ml.webp" type="image/webp">
@@ -798,7 +1120,7 @@
                 </picture>
               </a>
             </div>
-            <div class="col-md-6 col-sm-12 img-parent-cert">
+            <div class="col-md-4 col-sm-12 img-parent-cert">
               <a href="https://www.udemy.com/certificate/UC-cb5494d8-7edb-4210-ab4e-90fd93b8ef61/" target="_blank">
                 <picture>
                   <source srcset="/img/diplomas/udemy/django.webp" type="image/webp">
@@ -893,12 +1215,38 @@
         </div>
 
         <div id="freecodecamp-content" class="tab-content">
+          <div class="row padding">
+            <div class="col-md-4 col-sm-12 img-parent-cert">
+              <a href="https://www.freecodecamp.org/certification/brittle/machine-learning-with-python-v7" target="_blank">
+                <picture>
+                  <source srcset="/img/diplomas/freecodecamp/machine-learning-with-python.webp" type="image/webp">
+                  <img class="certificate-img freecodecamp-img" src="/img/diplomas/freecodecamp/machine-learning-with-python.png" alt="Machine Learning with Python Certificate" loading="lazy">
+                </picture>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-12 img-parent-cert">
+              <a href="https://www.freecodecamp.org/certification/brittle/data-analysis-with-python-v7" target="_blank">
+                <picture>
+                  <source srcset="/img/diplomas/freecodecamp/data-analysis-with-python.webp" type="image/webp">
+                  <img class="certificate-img freecodecamp-img" src="/img/diplomas/freecodecamp/data-analysis-with-python.png" alt="Data Analysis with Python Certificate" loading="lazy">
+                </picture>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-12 img-parent-cert">
+              <a href="https://www.freecodecamp.org/certification/brittle/scientific-computing-with-python-v7" target="_blank">
+                <picture>
+                  <source srcset="/img/diplomas/freecodecamp/scientific-computing-with-python.webp" type="image/webp">
+                  <img class="certificate-img freecodecamp-img" src="/img/diplomas/freecodecamp/scientific-computing-with-python.png" alt="Scientific Computing with Python Certificate" loading="lazy">
+                </picture>
+              </a>
+            </div>
+          </div>
           <div class="row padding ">
             <div class="col-md-4 col-sm-12 img-parent-cert">
-              <a href="https://www.freecodecamp.org/certification/brittle/responsive-web-design" target="_blank">
+              <a href="https://www.freecodecamp.org/certification/brittle/front-end-development-libraries" target="_blank">
                 <picture>
-                  <source srcset="img/diplomas/freecodecamp/resp-web.webp" type="image/webp">
-                  <img class="certificate-img freecodecamp-img" src="img/diplomas/freecodecamp/resp-web.jpg" alt="Responsive Web Design Certificate" loading="lazy">
+                  <source srcset="/img/diplomas/freecodecamp/front-end.webp" type="image/webp">
+                  <img class="certificate-img freecodecamp-img" src="/img/diplomas/freecodecamp/front-end.png" alt="Front End Development Libraries Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
@@ -906,15 +1254,15 @@
               <a href="https://www.freecodecamp.org/certification/brittle/javascript-algorithms-and-data-structures" target="_blank">
                 <picture>
                   <source srcset="img/diplomas/freecodecamp/js-algo.webp" type="image/webp">
-                  <img class="certificate-img freecodecamp-img" src="img/diplomas/freecodecamp/js-algo.jpg" alt="JavaScript Algorithms and Data Structures Certificate" loading="lazy">
+                  <img class="certificate-img freecodecamp-img" src="img/diplomas/freecodecamp/js-algo.png" alt="JavaScript Algorithms and Data Structures Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
             <div class="col-md-4 col-sm-12 img-parent-cert">
-              <a href="https://www.freecodecamp.org/certification/brittle/front-end-development-libraries" target="_blank">
+              <a href="https://www.freecodecamp.org/certification/brittle/responsive-web-design" target="_blank">
                 <picture>
-                  <source srcset="/img/diplomas/freecodecamp/front-end.webp" type="image/webp">
-                  <img class="certificate-img freecodecamp-img" src="/img/diplomas/freecodecamp/front-end.jpg" alt="Front End Development Libraries Certificate" loading="lazy">
+                  <source srcset="img/diplomas/freecodecamp/resp-web.webp" type="image/webp">
+                  <img class="certificate-img freecodecamp-img" src="img/diplomas/freecodecamp/resp-web.png" alt="Responsive Web Design Certificate" loading="lazy">
                 </picture>
               </a>
             </div>
@@ -943,23 +1291,102 @@
     <div data-aos="zoom-in-up" data-aos="zoom-out-up">
       <h2 class="display-4 subtitle-text-color">Let's work together!</h2>
       <br>
-      <ul>
-        <li class="contact-list">
-          <a href="https://github.com/brittleru" target="_blank" id="profile-link" class="personal-links">
-            <i class="fab fa-github" aria-hidden="true"></i> GitHub
-          </a>
-        </li>
-        <li class="contact-list">
-          <a href="https://www.linkedin.com/in/sebastian-mocanu-b76a61184/" target="_blank" class="personal-links">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-        </li>
-        <li class="contact-list">
-          <a href="mailto:sebastian.mocanu31@gmail.com" subject="feedback" target="_blank" class="personal-links">
-            <i class="fa fa-envelope-square" aria-hidden="true"></i> Send mail
-          </a>
-        </li>
-      </ul>
+      
+      <div class="contact-group">
+        <h5 class="contact-group-label">General Links</h5>
+        <ul class="contact-links">
+          <li class="contact-list">
+            <a href="https://github.com/brittleru" target="_blank" id="profile-link" class="personal-links">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </li>
+          <li class="contact-list">
+            <a href="https://www.linkedin.com/in/sebastian-mocanu-b76a61184/" target="_blank" class="personal-links">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </li>
+          <li class="contact-list">
+            <a href="https://x.com/brittleru" target="_blank" class="personal-links">
+              <i class="fab fa-twitter"></i> (X)
+            </a>
+          </li>
+          <li class="contact-list">
+            <a href="mailto:sebastian.mocanu31@gmail.com" subject="feedback" target="_blank" class="personal-links">
+              <i class="fa fa-envelope-square" aria-hidden="true"></i> Email
+            </a>
+          </li>
+        </ul>
+      </div>
+      <br>
+
+      <div class="contact-group">
+        <h5 class="contact-group-label">Research Platforms</h5>
+        <ul class="contact-links">
+          <li class="contact-list">
+            <a href="https://scholar.google.com/citations?user=osyBED4AAAAJ&hl=en" target="_blank" class="personal-links">
+              <img src="/img/logos/Google_Scholar_logo.svg" alt="Google Scholar Logo">
+              Google Scholar
+            </a>
+          </li>
+          <li class="contact-list">
+            <a href="https://orcid.org/0009-0007-0313-4724" target="_blank" class="personal-links">
+              <i class="fab fa-orcid"></i> ORCID
+            </a>
+          </li>
+          <li class="contact-list">
+            <a href="https://www.semanticscholar.org/author/Sebastian-Mocanu/2373605819" target="_blank" class="personal-links">
+              <i class="fas fa-graduation-cap"></i>
+              Semantic Scholar
+            </a>
+          </li>
+        </ul>
+        <ul class="contact-links">
+          <li class="contact-list">
+            <a href="https://www.researchgate.net/profile/Sebastian-Mocanu-3" target="_blank" class="personal-links">
+              <i class="fab fa-researchgate"></i> ResearchGate
+            </a>
+          </li>
+          <li class="contact-list">
+            <a href="https://dblp.org/pid/413/6896.html" target="_blank" class="personal-links">
+              <i class="fas fa-book"></i> DBLP
+            </a>
+          </li>
+          <li class="contact-list">
+            <a href="https://openreview.net/profile?id=%7ESebastian_Mocanu1" target="_blank" class="personal-links">
+              <i class="fas fa-file-alt"></i> OpenReview
+            </a>
+          </li>
+        </ul>
+      </div>
+      <br>
+
+      <div class="contact-group">
+        <h5 class="contact-group-label">Coding & ML</h5>
+        <ul class="contact-links">
+          <li class="contact-list">
+            <a href="https://huggingface.co/brittleru" target="_blank" class="personal-links">
+              <img src="/img/logos/hugging-face.svg" alt="Hugging Face Logo" class="hf-icon">
+              Hugging Face
+            </a>
+          </li>
+          <li class="contact-list">
+            <a href="https://www.kaggle.com/brittle" target="_blank" class="personal-links">
+              <i class="fab fa-kaggle"></i> Kaggle
+            </a>
+          </li>
+          <li class="contact-list">
+            <a href="https://www.codewars.com/users/Brittle" target="_blank" class="personal-links">
+              <img src="/img/logos/codewars-logo-icon.svg" alt="CodeWars logo">
+              CodeWars
+            </a>
+          </li>
+          <li class="contact-list">
+            <a href="https://leetcode.com/u/diemetal851/" target="_blank" class="personal-links">
+              <i class="fas fa-code"></i> LeetCode
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -986,7 +1413,7 @@
     <div class="container-fluid">
       <div class="row text-center">
         <div class="col-12"><br>
-          <p><b>&copy</b> 2021 <span class="text-highlight-color"><b>Sebastian Mocanu</b></span></p>
+          <p><b>&copy;</b> 2021 - 2026 <span class="text-highlight-color"><b>Sebastian Mocanu</b></span></p>
         </div>
       </div>
     </div>
