@@ -86,9 +86,10 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_stuff/favicon-16x16.png">
   <link rel="manifest" href="/assets/favicon_stuff/site.webmanifest">
   <link rel="mask-icon" href="/assets/favicon_stuff/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-config" content="/favicon_stuff/browserconfig.xml">
+  <meta name="msapplication-config" content="/assets/favicon_stuff/browserconfig.xml">
   <meta name="msapplication-TileColor" content="#2d89ef">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#a1c4fd" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1b2735" media="(prefers-color-scheme: dark)">
   <meta name="format-detection" content="telephone=no">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -187,6 +188,8 @@
       "https://www.semanticscholar.org/author/Sebastian-Mocanu/2373605819",
       "https://arxiv.org/search/cs?searchtype=author&query=Mocanu%2C+Sebastian",
       "https://www.webofscience.com/wos/author/record/ACT-8528-2022",
+      "https://sciprofiles.com/profile/sebastian-mocanu",
+      "https://ieeexplore.ieee.org/author/474993494189340",
       "https://crescdi.pub.ro/#/profile/464039",
       "https://www.brainmap.ro/sebastian-mocanu",
       "https://www.kaggle.com/brittle",
@@ -196,7 +199,9 @@
       "https://www.freecodecamp.org/brittle",
       "https://www.codecademy.com/profiles/Brittle23",
       "https://x.com/brittleru",
-      "https://www.udemy.com/user/mocanu-sebastian-2/"
+      "https://www.udemy.com/user/mocanu-sebastian-2/",
+      "https://theorg.com/org/politehnica-university-of-bucharest?person=sebastian-mocanu",
+      "https://dev.to/sebastian_mocanu"
     ],
     "seeks": {
       "@type": "Demand",
@@ -235,6 +240,43 @@
       "@type": "Person",
       "name": "Sebastian Mocanu"
     }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Efficient Self-Supervised Neuro-Analytic Visual Servoing for Real-time Quadrotor Control",
+    "name": "Efficient Self-Supervised Neuro-Analytic Visual Servoing for Real-time Quadrotor Control",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Sebastian Mocanu",
+        "sameAs": "https://orcid.org/0009-0007-0313-4724",
+        "affiliation": {
+          "@type": "EducationalOrganization",
+          "name": "University POLITEHNICA of Bucharest"
+        }
+      },
+      {"@type": "Person", "name": "Sebastian-Ion Nae"},
+      {"@type": "Person", "name": "Mihai-Eugen Barbu"},
+      {"@type": "Person", "name": "Marius Leordeanu"}
+    ],
+    "datePublished": "2025-10",
+    "publisher": {
+      "@type": "Organization",
+      "name": "IEEE/CVF International Conference on Computer Vision (ICCV) Workshops"
+    },
+    "url": "https://openaccess.thecvf.com/content/ICCV2025W/EVW/papers/Mocanu_Efficient_Self-Supervised_Neuro-Analytic_Visual_Servoing_for_Real-time_Quadrotor_Control_ICCVW_2025_paper.pdf",
+    "sameAs": [
+      "https://arxiv.org/abs/2507.19878",
+      "https://spacetime-vision-robotics-laboratory.github.io/NSER-IBVS/"
+    ],
+    "abstract": "This work introduces a self-supervised neuro-analytical, cost efficient, model for visual-based quadrotor control in which a small 1.7M parameters student ConvNet learns automatically from an analytical teacher, an improved image-based visual servoing (IBVS) controller. Our IBVS system solves numerical instabilities by reducing the classical visual servoing equations and enabling efficient stable image feature detection. Through knowledge distillation, the student model achieves 11x faster inference compared to the teacher IBVS pipeline, while demonstrating similar control accuracy at a significantly lower computational and memory cost. Our vision-only self-supervised neuro-analytic control, enables quadrotor orientation and movement without requiring explicit geometric models or fiducial markers. The proposed methodology leverages simulation-to-reality transfer learning and is validated on a small drone platform in GPS-denied indoor environments. Our key contributions include: (1) an analytical IBVS teacher that solves numerical instabilities inherent in classical approaches, (2) a two-stage segmentation pipeline combining YOLOv11 with a U-Net-based mask splitter for robust anterior-posterior vehicle segmentation to correctly estimate the orientation of the target, and (3) an efficient knowledge distillation dual-path system, which transfers geometric visual servoing capabilities from the analytical IBVS teacher to a compact and small student neural network that outperforms the teacher, while being suitable for real-time onboard deployment.",
+    "keywords": "Visual Servoing, Quadrotor Control, Self-Supervised Learning, Computer Vision, Robotics, Navigation",
+    "isAccessibleForFree": true,
+    "citation": "Mocanu, S., Nae, S.I., Barbu, M.E., Leordeanu, M.: Efficient self-supervised neuro-analytic visual servoing for real-time quadrotor control. In: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops. pp. 1744-1753 (October 2025)"
   }
   </script>
 
@@ -282,6 +324,7 @@
   <div class="">
     <button id="dark-theme" type="button" class="btn btn-outline-secondary btn-primary btn-lg" name="button">Light Theme?</button>
   </div>
+  <h1 class="visually-hidden">Sebastian Mocanu - AI Research Scientist & PhD Candidate</h1>
   <!-- Particle stuff -->
   <div id="particles-js"></div>
 
@@ -302,7 +345,7 @@
       </div>
 
       <div class="about-me-welcome right" data-aos="zoom-in-left">
-        <h1 class="text-highlight-color" style="font-size: 1.75rem;">Hello, Sebastian here</h1>
+        <h2 class="text-highlight-color" style="font-size: 1.75rem;">Hello, Sebastian here</h2>
         <h5>I'm a <span class="text-highlight-color">PhD candidate</span> at
           University POLITEHNICA of Bucharest, researching
           <span class="text-highlight-color">Computer Vision</span> and
