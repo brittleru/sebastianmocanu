@@ -2773,7 +2773,7 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #var(--hoverColor);
+  background: var(--hoverColor);
 }
 
 /*--- Bootstrap Padding Fix --*/
