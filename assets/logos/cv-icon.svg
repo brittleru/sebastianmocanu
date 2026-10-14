@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#b0b0b0">
+    <defs>
+        <mask id="cv-cut">
+        <rect width="384" height="512" fill="#fff"/>
+        <g fill="none" stroke="#000" stroke-width="46" stroke-linejoin="round" stroke-linecap="round">
+            <path d="M172 284 A68 68 0 1 0 172 388"/>
+            <path d="M220 268 L264 404 L308 268"/>
+        </g>
+        </mask>
+    </defs>
+    <g mask="url(#cv-cut)">
+        <path d="M48 0H224V112Q224 160 272 160H384V464Q384 512 336 512H48Q0 512 0 464V48Q0 0 48 0Z"/>
+        <path d="M256 0L384 128H288Q256 128 256 96Z"/>
+    </g>
+</svg>
